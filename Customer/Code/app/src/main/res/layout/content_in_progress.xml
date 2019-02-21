@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/splash_bg_color"
+            android:scaleType="fitXY"
+            app:srcCompat="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/rideCar_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/home_mRide"
+            android:textAllCaps="true"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/rideCar_mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="155dp"
+            android:layout_marginTop="77dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_light_white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/rideCar_pickUpText"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_location"
+                android:enabled="false"
+                android:hint="@string/ride_location"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <EditText
+                android:id="@+id/rideCar_destinationText"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_location"
+                android:enabled="false"
+                android:hint="@string/ride_destination"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/rideCar_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/rideCar_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/material_light_white"
+            android:clickable="true"
+            android:paddingBottom="3dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="3dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rideCar_select_car_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/rideCar_select_car"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/icon_mcar_selector" />
+
+                <TextView
+                    android:id="@+id/rideCar_select_car_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rideCar_select_car"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    android:text="@string/home_mCar"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_service_selector"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rideCar_select_ride_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/rideCar_select_ride"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/icon_mride_selector" />
+
+                <TextView
+                    android:id="@+id/ride_car_select_ride_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rideCar_select_ride"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    android:text="@string/home_mRide"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_service_selector"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rideCar_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueSoft"
+                android:clickable="true"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/rideCar_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ride_price"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rideCar_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ride_cost"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/material_light_white"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/driver_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:riv_border_color="@color/colorPrimary"
+                            app:riv_border_width="3dp"
+                            app:riv_corner_radius="120dp" />
+
+                        <TextView
+                            android:id="@+id/driver_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Ariana Grande-Butera"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order No. 343345344" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="B 15 A" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toyota 86" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Arriving in 5 mins"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/send_message"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_chat" />
+
+                        <ImageView
+                            android:id="@+id/call_driver"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_phone"
+                            android:tint="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/rideCar_order"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/text_order"
+                android:textColor="@color/material_light_white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

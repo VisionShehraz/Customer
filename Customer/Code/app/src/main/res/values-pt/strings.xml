@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GOTAXI</string>
+    <string name="main_menuHome">Casa</string>
+    <string name="main_menuHistory">Encomendar</string>
+    <string name="main_menuHelp">Socorro</string>
+    <string name="main_menuSetting">Perfil</string>
+    <string name="main_pickLocation">Selecione o local</string>
+    <string name="app_name_services">Serviços GoTaxi</string>
+
+    <string name="home_mRide">Go-Moto</string>
+    <string name="home_mCar">Go-Cab</string>
+    <string name="home_mFood">Go-Food</string>
+    <string name="home_mMart">Go-Mart</string>
+    <string name="home_mSend">Go-Send</string>
+    <string name="home_mMassage">Go-Massage</string>
+    <string name="home_mBox">Go-Box</string>
+    <string name="home_mService">Go-Service</string>
+    <string name="home_mAuto">Go-Auto</string>
+    <string name="home_mClean">Go-Clean</string>
+    <string name="home_mTutor">Go-Tutor</string>
+    <string name="home_mPlumber">Go-Plumber</string>
+    <string name="home_mSchool">Travel</string>
+    <string name="home_mTour">Tour</string>
+    <string name="home_mGlam">Go-Glam</string>
+    <string name="home_mTicket">Go-Ticket</string>
+    <string name="home_mSpesial">Go-Action</string>
+    <string name="more">More</string>
+    <string name="home_mBus">Go-Bus</string>
+    <string name="home_mLaundry">Go-Laundry</string>
+    <string name="home_mSecurity">Go-Security</string>
+    <string name="home_mFuel">Go-Fuel</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Senha</string>
+    <string name="hint_firstName">Primeiro nome</string>
+    <string name="hint_lastName">Apelido</string>
+    <string name="hint_phoneNumber">Número de telefone</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_dob">DOB</string>
+    <string name="hint_pob">POB</string>
+
+    <string name="text_mPay">Carteira</string>
+    <string name="text_cash">Dinheiro</string>
+    <string name="text_topUp">Adicionar carteira</string>
+    <string name="text_order">Reserva</string>
+    <string name="text_next">Siguiente</string>
+    <string name="text_send">Mandar</string>
+    <string name="text_save">Salve</string>
+    <string name="text_noInternet">Nenhuma conexão com a Internet!</string>
+    <string name="text_close">Perto</string>
+    <string name="update_now">Atualizar</string>
+    <string name="no">Não</string>
+    <string name="text_updating">Atualizar dinheiro</string>
+    <string name="text_addressNotAvailable">Endereço não existe.</string>
+    <string name="text_cancel">Cancelar</string>
+    <string name="text_profileName">Nome do perfil</string>
+    <string name="text_howToOrder">Call Center : salesgotaxi@gmail.com</string>
+    <string name="press_again_to_exit">Por favor, pressione VOLTAR novamente para sair</string>
+
+    <string name="setting_profile">Perfil</string>
+    <string name="setting_changePassword">Mudar senha</string>
+    <string name="setting_privacyPolicy">Política de Privacidade</string>
+    <string name="setting_faq">Perguntas freqüentes</string>
+    <string name="setting_share">Compartilhar aplicativos</string>
+    <string name="daftar_mitra">Registro de Motorista</string>
+    <string name="setting_mPayCredit">Carteira</string>
+    <string name="setting_termOfService">Termos de serviço</string>
+    <string name="setting_rateApps">Apps de classificação</string>
+    <string name="setting_callUs">Contate-Nos</string>
+    <string name="setting_logout">Sair</string>
+    <string name="setting_editProfile">Editar</string>
+
+    <string name="setting_nameDummy">Androgo</string>
+    <string name="setting_emailDummy">salesgotaxi@gmail.com</string>
+    <string name="setting_phoneDummy">+6282259939565</string>
+
+    <string name="history_inProgress">Em processo</string>
+    <string name="history_completed">Feito</string>
+
+    <string name="waiting_pleaseWait">Por favor, espere…</string>
+    <string name="waiting_desc">Estamos encontrando os drivers mais próximos</string>
+    <string name="mart_searchLocation">Pesquisar locais..</string>
+
+    <string name="button_signIn">ENTRAR</string>
+    <string name="button_signUp">REGISTO</string>
+    <string name="button_dontHaveAccount">Não tem uma conta ainda?</string>
+    <string name="button_haveAccount">já tem uma conta?</string>
+
+    <string name="dialog_loading">Carregando…</string>
+    <string name="Driver_arriving">Motorista chegando em </string>
+
+    <string name="ride_location">Localização da coleta</string>
+    <string name="ride_destination">Adicionar destino</string>
+
+    <string name="ride_note">Adicionar notas</string>
+
+    <string name="ride_setPickUp">Definir local de retirada</string>
+    <string name="ride_setDestination">Defina seu destino</string>
+
+    <string name="ride_price">Preço (0 Km)</string>
+    <string name="ride_cost">$ 0.00</string>
+    <string name="ride_mPayBalance">$ 0.00</string>
+    <string name="ride_discount">Desconto de 20% ao usar carteira</string>
+
+    <string name="mart_nearDriver">Drivers mais próximos</string>
+    <string name="mart_martName">Nome da loja</string>
+    <string name="mart_mart">Digite o nome da loja</string>
+    <string name="mart_location">Localização das lojas</string>
+    <string name="mart_order">Reserva</string>
+    <string name="mart_product">Unid</string>
+    <string name="mart_plus">+</string>
+    <string name="mart_minus">-</string>
+    <string name="mart_details">Detalhe</string>
+    <string name="mart_to">Destino</string>
+    <string name="mart_estimatedBiaya">Custos estimados</string>
+    <string name="mart_useLocation">Definir este local</string>
+
+    <string name="sender">Remetente</string>
+    <string name="receiver">Receptor</string>
+    <string name="send_item_description">descrição do item</string>
+    <string name="send_description">A descrição é clara</string>
+    <string name="send_sender_name">Nome do remetente</string>
+    <string name="send_sender_phone">Celular do remetente</string>
+    <string name="send_receiver_name">Nome do recebedor</string>
+    <string name="send_receiver_phone">Telefone celular do receptor</string>
+    <string name="payment_method">Método de pagamento</string>
+    <string name="send_waktuDanAlamat">Hora e endereço</string>
+    <string name="send_tanggalDanJam">Data e hora</string>
+    <string name="send_alamatAsal">Endereço residencial</string>
+    <string name="send_alamatTujuan">Endereço de destino</string>
+    <string name="send_penerima">Receptor</string>
+    <string name="send_nama">Nome</string>
+    <string name="send_nomor">Telefone celular</string>
+    <string name="send_namaBarang">Nome dos itens</string>
+
+    <string name="mbox_cargo">Qual veículo você precisa para mover suas mercadorias?</string>
+    <string name="mbox_pickup">PEGAR</string>
+    <string name="mbox_truck">TRUCK</string>
+    <string name="mbox_dimension">Dimensões 200x130x120</string>
+    <string name="mbox_maxweight">Carga Máxima de 1000 kg</string>
+    <string name="mbox_drivernear">Drivers mais próximos</string>
+    <string name="mbox_origin">Endereço residencial</string>
+    <string name="mbox_destination">Endereço de destino</string>
+    <string name="mbox_location">Localização</string>
+    <string name="mbox_location_detail">Detalhe Localização</string>
+    <string name="mbox_destname">Nome receptor</string>
+    <string name="mbox_contact_person">Contato (Opcional)</string>
+    <string name="mbox_contact_receiver">Contato (Obrigatório)</string>
+    <string name="mbox_name">Nome</string>
+    <string name="mbox_phone">Celular</string>
+    <string name="mbox_instruction">Instruções (Opcional)</string>
+    <string name="mbox_nextdest">Próximo destino</string>
+    <string name="mbox_remove">Excluir</string>
+    <string name="mbox_item_deliver">Entrega de Itens</string>
+    <string name="mbox_items">Mercadorias</string>
+    <string name="mbox_note_items">Itens Notas</string>
+    <string name="mbox_extra_feature">Adicional</string>
+    <string name="mbox_loading_service">Esperando pelo serviço</string>
+    <string name="mbox_note">Notas</string>
+    <string name="mbox_note_extra_feature">O motorista só ajuda você a levantar e abaixar as mercadorias do veículo, se precisar de mais ajuda, por favor, verifique se há assistente adicional</string>
+    <string name="mbox_note_insurance">Selecione o valor do prêmio e o escopo do seguro de acordo com o valor das mercadorias e suas necessidades</string>
+    <string name="mbox_additional">1 remetente adicional</string>
+    <string name="mbox_picknow">Pegar agora</string>
+    <string name="mbox_picklater">Levante mais tarde</string>
+    <string name="mbox_insurance">Seguro</string>
+    <string name="mbox_insurance_count">$ 0.00</string>
+    <string name="mbox_insurance_upto">Seguro até $ 0,00</string>
+    <string name="mbox_ganti_opsi">Substituir Opções</string>
+    <string name="mbox_booking">Tempo de reserva</string>
+    <string name="mbox_term">Eu concordo com os termos e condições aplicáveis</string>
+    <string name="mbox_detail">Detalhe</string>
+    <string name="mbox_noloading">Nenhum serviço de carregamento</string>
+    <string name="mbox_discount_code">Voucher de Código</string>
+    <string name="mbox_input_code">Coloque o código</string>
+    <string name="mbox_btn_active">Ativação</string>
+    <string name="mbox_payment">Forma de pagamento</string>
+    <string name="mbox_price">Preço total</string>
+    <string name="mbox_loadingservice">Esperando pelo serviço</string>
+    <string name="mbox_paywith">Pagar com</string>
+    <string name="mbox_payment_method">Método de pagamento</string>
+    <string name="mbox_setloc">Set this Location</string>
+    <string name="mbox_discount">Desconto</string>
+
+    <string name="service_ac">Manutenção de menu AC</string>
+    <string name="service_layanan">Serviço</string>
+    <string name="service_actype">TIPO</string>
+    <string name="service_quantity">QUANTIDADE</string>
+    <string name="service_residential">TIPO RESIDENCIAL</string>
+    <string name="service_problem">PROBLEMA</string>
+    <string name="service_promotion">CÓDIGO DE PROMOÇÃO</string>
+    <string name="service_date">ENCONTRO</string>
+    <string name="service_time">TEMPO</string>
+    <string name="service_price">PREÇO</string>
+    <string name="service_progress">Seus técnicos irão ajudá-lo a corrigir seu problema de AC</string>
+
+    <string name="glam_glamType">Tipo de Serviços</string>
+
+    <string name="massage_pleaseWait">Por favor, espere…</string>
+    <string name="massage_massageType">Tipo de massagem</string>
+    <string name="massage_duration">Duração</string>
+    <string name="massage_therapistPreference">Preferência do terapeuta</string>
+    <string name="glam_preference">Provedores de serviço</string>
+    <string name="price_glam">$ 20.00</string>
+    <string name="service_glam">Premium Make Up</string>
+    <string name="massage_yourGender">Seu gênero</string>
+    <string name="massage_therapist">Parceiros</string>
+
+        <string name="massage_genderMale">Masculino</string>
+        <string name="massage_genderFemale">Feminino</string>
+        <string name="massage_genderNoPreference">Sem preferências</string>
+        <string name="massage_60duration">60 Min</string>
+        <string name="massage_90duration">90 Min</string>
+        <string name="massage_120duration">120 Min</string>
+        <string name="massage_next">Próxima</string>
+        <string name="massage_location">Localização </string>
+        <string name="massage_dateTime">Data e Hora </string>
+        <string name="massage_scheduleAndAddress">Agenda e endereço</string>
+        <string name="massage_price">Preço</string>
+        <string name="massage_orderDetails">Detalhes do pedido</string>
+        <string name="massage_additionalNotes"> notas adicionais</string>
+        <string name="massage_tanggalPesanan">O horário do pedido não deve ser menor que o horário atual. </string>
+        <string name="massage_cost"> US $ 5,00 </string>
+        <string name="massage_mPayBalance">$ 0.00 </string>
+        <string name="massage_discount">Desconto de 25% ao usar carteira</string>
+        <string name="massage_status">Status</string>
+        <string name="massage_cancel">Cancelar pedidos</string>
+        <string name="massage_cost_text">Custo</string>
+
+   <!-- <string name="clean_Tools">Ferramentas</string>
+    <string name="clean_noTools">Sem ferramentas</string>
+    <string name="clean_withTools">Com ferramentas</string>
+    <string name="tutor_options">Opções do professor</string>-->
+
+
+    <string name="title_activity_in_progress">Em andamento </string>
+    <string name="title_activity_rate_driver">Valor do driver </string>
+    <string name="title_activity_help">Posso ajudar você? </string>
+    <string name="title_activity_chat">Conversa </string>
+    <string name="title_activity_update_profile">Atualizar perfil </string>
+    <string name="title_activity_change_password">Alterar senha </string>
+    <string name="title_activity_term_of_service">Termo de Serviço </string>
+    <string name="title_activity_privacy_policy">Política de Privacidade </string>
+    <string name="title_activity_forgot_password">Esqueceu a senha </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_faq">Perguntas frequentes</string>
+    <string name="title_activity_top_up">Carteira</string>
+
+    <array name="list_bank">
+        <item>Bank BCA</item>
+        <item>Bank SFD</item>
+        <item>Bank WQA</item>
+    </array>
+
+    <string-array name="mpay">
+        <item>Dinheiro</item>
+        <item>Carteira</item>
+    </string-array>
+
+    <string name="title_activity_history_detail">Detalhes do Histórico</string>
+    <string name="title_activity_send">Go-SEND</string>
+    <string name="title_activity_add_detail_send">Adicionar detalhes</string>
+
+    <string name="food_search">Com fome? Encontre uma refeição bem!</string>
+    <string name="food_near">MAIS PRÓXIMO</string>
+    <string name="food_explore_category">Explorar de categorias</string>
+    <string name="food_neardesc">Ver restaurantes e café nas proximidades</string>
+    <string name="food_explore">Escolha o tipo de comida que você gosta</string>
+    <string name="food_see">Ver tudo</string>
+    <string name="food_menu">CARDÁPIO</string>
+    <string name="food_makanan">COMIDA</string>
+    <string name="food_notes">Adicionar notas</string>
+    <string name="food_estimated">Preço estimado</string>
+    <string name="food_addtocart">Adicionar</string>
+    <string name="food_booking">CONFIRMAÇÃO DE RESERVA</string>
+    <string name="food_itemorder">A comida encomendada</string>
+    <string name="food_deliver">ENDEREÇO DE ENTREGA</string>
+    <string name="food_destination">Adicionar local de destino</string>
+    <string name="food_payment">DETALHES DE PAGAMENTO</string>
+    <string name="food_cost">Custo (estimado)</string>
+    <string name="food_delivery">custos de envio</string>
+    <string name="food_total">Preço total</string>
+    <string name="food_cash">Dinheiro</string>
+    <string name="food_pay">Método de pagamento</string>
+    <string name="food_searchRestaurant">Procurar Restaurante</string>
+    <string name="food_minimum3Chars">Mínimo de 3 caracteres</string>
+    <string name="food_tryAnotherSearchTerm">tente outro termo de pesquisa</string>
+    <string name="food_noRecordFound">Não há resultados para esta pesquisa.</string>
+    <string name="food_addNotes">Adicionar nota</string>
+    <string name="food_itemsToOrder">SEU PEDIDO</string>
+    <string name="food_partner">PARCEIRO</string>
+    <string name="food_closed">PERTO</string>
+
+
+    <string name="setting_changeLanguage">Alterar idioma</string>
+    <string name="language_setting">Language Setting</string>
+    <string name="lang_dialog_title">Alterar idioma</string>
+    <string name="lang_dialog_message">Escolha o idioma abaixo</string>
+    <string name="options">OPÇÃO</string>
+
+    <string name="detail_transaction">Detalhes da transação</string>
+    <string name="new_user">Novo usuário?</string>
+    <string name="rate_message">Obrigado por utilizar nossos serviços.</string>
+    <string name="change">Mudança</string>
+    <string name="incorrect">Usuário ou senha incorretos</string>
+    <string name="mbox_destination_search">Definir o destino GO-BOX</string>
+    <string name="call_sos">Ligue para o SOS</string>
+    <string name="call_sos_now">Você quer ligar para 999</string>
+    <string name="yes">SIM</string>
+    <string name="message_rate_driver">Dê sua classificação ao nosso motorista</string>
+    <string name="thank_you">Obrigado</string>
+    <string name="add_a_comment">Adicione um comentário..</string>
+
+
+    <!--
+
+     <string name="Residential_Type">Tipo residencial</string>
+      <string name="House">House</string>
+      <string name="Hotel">Hotel</string>
+
+      <string name="token">Token : %s</string>
+      <string name="push_notification">Push Notification</string>
+      <string name="auth_connect_with_facebook">Connect With Facebook</string>
+      <string name="btn_retry">Try again</string>
+      <string name="msg_offline">Connection to server lost, check your internet connection.</string>
+      <string name="offline">Connection to server lost..</string>
+      <string name="fast_furious"><![CDATA[Fast & Furious]]></string>
+
+    <string name="history">History</string>
+    <string name="transaction">Transaction</string>
+    <string name="cuisines_to_try">Cuisines to try</string>
+    <string name="see_all">See All</string>
+    <string name="delivery_order">Delivery Order</string>-->
+    <string name="book_now">Book Now</string>
+    <string name="with_wallet">with Wallet</string>
+    <string name="process">PROCESS</string>
+    <string name="complete">COMPLETE</string>
+    <string name="des">Por favor, digite seu número de celular para o processo de verificação com o sistema GO-TAXI</string>
+    <string name="get_code">Obter código</string>
+    <string name="verification">Verificação</string>
+    <string name="enter_code">Digite 6 códigos numéricos</string>
+    <string name="please_input_code">Por favor insira o código abaixo</string>
+
+    <string-array name="lang_select">
+        <item>Arabic</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Portuguese</item>
+        <item>Indonesia</item>
+        <item>English</item>
+    </string-array>
+</resources>

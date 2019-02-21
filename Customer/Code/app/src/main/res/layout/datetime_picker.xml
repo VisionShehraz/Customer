@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackTransparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/material_light_white"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/date_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/colorPrimary"
+                android:text="Today"
+                android:textColor="@color/material_light_white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/date_tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/material_light_white"
+                android:text="TOMORROW"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:textColor="@color/colorPrimary"
+                android:textSize="70sp" />
+
+            <TextView
+                android:id="@+id/month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOVEMBER"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:timePickerMode="spinner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/picker_set"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0.5"
+                android:background="@color/colorPrimarySoft"
+                android:text="Set"
+                android:textColor="@color/material_light_white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/picker_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.5"
+                android:background="@color/material_red_900"
+                android:text="Cancel"
+                android:textColor="@color/material_light_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

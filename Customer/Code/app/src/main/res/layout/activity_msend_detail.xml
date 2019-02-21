@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/splash_bg_color"
+            android:scaleType="fitXY"
+            app:srcCompat="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/mSendDetail_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/home_mRide"
+            android:textAllCaps="true"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/send_waktuDanAlamat"
+                android:textAllCaps="true"
+                android:textColor="@color/colorText"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/send_tanggalDanJam" />
+
+            <TextView
+                android:id="@+id/mSendDetail_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/material_light_white"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@color/material_light_black"
+                android:textSize="18sp"
+                tools:text="31 Desember 2016 15:49" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/send_alamatAsal" />
+
+            <TextView
+                android:id="@+id/mSendDetail_alamatAsal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/material_light_white"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@color/material_light_black"
+                android:textSize="18sp"
+                tools:text="Jl. xxx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/send_alamatTujuan" />
+
+            <TextView
+                android:id="@+id/mSendDetail_alamatTujuan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/material_light_white"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@color/material_light_black"
+                android:textSize="18sp"
+                tools:text="Jl. xxx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/send_penerima"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/send_nama" />
+
+            <TextView
+                android:id="@+id/mSendDetail_namaPenerima"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/material_light_white"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@color/material_light_black"
+                android:textSize="18sp"
+                tools:text="Jl. xxx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/send_nomor" />
+
+            <TextView
+                android:id="@+id/mSendDetail_nomorPenerima"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/material_light_white"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@color/material_light_black"
+                android:textSize="18sp"
+                tools:text="Jl. xxx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/send_namaBarang" />
+
+            <TextView
+                android:id="@+id/mSendDetail_namaBarang"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/material_light_white"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@color/material_light_black"
+                android:textSize="18sp"
+                tools:text="Barang y" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

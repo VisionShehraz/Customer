@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff2baf2b</color>
+    <color name="colorPrimaryDark">#ff0a8f08</color>
+    <color name="colorAccent">#009900</color>
+
+    <color name="splash_bg_color">#ff2baf2b</color>  <!--#3a5068 -->
+    <color name="colorPrimarySoft">#27c669</color>
+    <color name="colorPrimaryBuilding">#27c669</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRipple">#e7e7e7</color>
+    <color name="yellowfresh">#ffcc00</color>
+
+    <color name="pinkgo">#e5395b</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#38a0b9</color>
+    <color name="cream">#edd380</color>
+    <color name="orange">#38a0b9</color>
+    <color name="darkOrange">#3092a9</color>
+    <color name="darkGrey">#666666</color>
+    <color name="blue">#2a8ba1</color>
+    <color name="blueTransparent">#60127399</color>
+    <color name="klikButton">#318ea4</color>
+    <color name="brown">#b87e00</color>
+    <color name="darkBrown">#ffff</color>
+    <color name="darkerBrown">#462300</color>
+    <color name="red">#a50000</color>
+    <color name="yellowCream">#4cb5ce</color>
+    <color name="textGrey">#9b9a9a</color>
+    <color name="lightGrey">#f4f4f4</color>
+    <color name="bgChat">#3a5068</color>
+    <color name="tintGrey">#cfcfcf</color>
+    <color name="tintDarkGrey">#646464</color>
+    <color name="textColorGreen">#27c669</color>
+    <color name="textColorRed">#c4242c</color>
+    <color name="bluefresh">#ff3f51b5</color>
+
+    <color name="colorGrey">#a5a5a5</color>
+    <color name="color_grey_toWhite">#eeeeee</color>
+
+</resources>

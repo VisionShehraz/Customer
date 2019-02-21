@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_makanan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.gotaxiride.passenger.mFood.MakananActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/splash_bg_color"
+            android:scaleType="fitXY"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:adjustViewBounds="true"
+            android:tint="@color/text_menu"
+            android:src="@drawable/ic_arrow_back_yellow" />
+
+        <TextView
+            android:id="@+id/menu_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/home_mFood"
+            android:textAllCaps="true"
+            android:textColor="@color/text_menu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/neosanspro_medium"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/material_blue_grey_200" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/makanan_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue_grey_50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/makanan_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="8dp"
+                android:text="List Food"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:fontFamily="@font/neosans_pro_regular"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/makanan_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/makanan_tab"
+            android:background="@color/material_blue_grey_200" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/makanan_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/card_price"
+            android:layout_below="@+id/makanan_line">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_above="@+id/card_price"
+            android:background="@color/colorPrimarySoft"
+            android:visibility="invisible" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_price"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="7dp"
+            card_view:cardElevation="7sp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true">
+
+
+            <RelativeLayout
+                android:id="@+id/price_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/material_green_500"
+                android:padding="8dp"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/qty_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 item"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/neosans_pro_regular"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/cost_line"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/qty_text"
+                    android:background="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/cost_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/cost_line"
+                    android:text="Rp. 23000"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/neosans_pro_regular"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/estimated_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cost_text"
+                    android:text="Press for order details"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/neosans_pro_regular"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/mfood_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/ic_shopping_basket_black_24dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

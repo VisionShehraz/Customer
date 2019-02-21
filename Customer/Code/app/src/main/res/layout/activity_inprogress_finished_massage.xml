@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_color"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/inProgressFinishedMassage_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/splash_bg_color"
+            android:scaleType="fitXY"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/massage" />
+
+        <TextView
+            android:id="@+id/rideCar_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Detail Orders"
+            android:textAllCaps="true"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/inProgressFinishedMassage_cancel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/material_red_700"
+        android:text="@string/massage_cancel"
+        android:textColor="@color/material_light_white"
+
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inProgressFinishedMassage_cancel"
+        android:layout_below="@+id/inProgressFinishedMassage_titlebar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/massage_therapist"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_light_white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/inProgressFinishedMassage_contactContainer"
+                    android:padding="24dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/inProgressFinishedMassage_driverImage"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_centerHorizontal="true"
+                         />
+
+                    <TextView
+                        android:id="@+id/inProgressFinishedMassage_driverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inProgressFinishedMassage_driverImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/material_light_black"
+                        android:textSize="18sp"
+                        tools:text="Test Driver Massage Lorem Ipsum lor diliramet" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/inProgressFinishedMassage_contactContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/inProgressFinishedMassage_phoneButton"
+                        android:layout_width="90dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_phone_massage" />
+
+                    <ImageView
+                        android:id="@+id/inProgressFinishedMassage_messageButton"
+                        android:layout_width="90dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_service_message" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/massage_scheduleAndAddress"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/massage_dateTime" />
+
+                <TextView
+                    android:id="@+id/inProgressFinishedMassage_dateTimeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/material_light_white"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:textColor="@color/material_light_black"
+                    android:textSize="16sp"
+
+                    tools:text="31 Desember 2016 15:49" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/massage_location" />
+
+                <TextView
+                    android:id="@+id/inProgressFinishedMassage_locationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/material_light_white"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:textColor="@color/material_light_black"
+                    android:textSize="16sp"
+                    tools:text="Jl. Cacat Sekali" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/massage_orderDetails"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Main Service" />
+
+                <TextView
+                    android:id="@+id/inProgressFinishedMassage_massageTypeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/material_light_white"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:textColor="@color/material_light_black"
+                    android:textSize="18sp"
+                    tools:text="Full Body Massage" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Features" />
+
+
+                <TextView
+                    android:id="@+id/inProgressFinishedMassage_durationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/material_light_white"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:textColor="@color/material_light_black"
+                    android:textSize="18sp"
+                    tools:text="90" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/massage_cost_text" />
+
+
+                <TextView
+                    android:id="@+id/inProgressFinishedMassage_costText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/material_light_white"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:textColor="@color/material_light_black"
+                    android:textSize="18sp"
+                    tools:text="$ 5.00" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/massage_status" />
+
+
+                <TextView
+                    android:id="@+id/inProgressFinishedMassage_statusText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:text="Finish" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

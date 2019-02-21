@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gotaxiride.passenger"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.gotaxiride.passenger.GoTaxiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gotaxiride.passenger.splash.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gotaxiride.passenger.signIn.SignInActivity" />
+        <activity android:name="com.gotaxiride.passenger.home.MainActivity" />
+        <activity android:name="com.gotaxiride.passenger.signUp.SignUpActivity" />
+        <activity android:name="com.gotaxiride.passenger.mRideCar.RideCarActivity" />
+        <activity android:name="com.gotaxiride.passenger.mRideCar.WaitingActivity" />
+        <activity android:name="com.gotaxiride.passenger.mMart.MartActivity" />
+        <activity android:name="com.gotaxiride.passenger.mMart.LocationPickerActivity" />
+        <activity android:name="com.gotaxiride.passenger.mMart.MartWaitingActivity" />
+        <activity android:name="com.gotaxiride.passenger.mSend.SendWaitingActivity" />
+        <activity android:name="com.gotaxiride.passenger.mBox.BoxActivity" />
+        <activity android:name="com.gotaxiride.passenger.mBox.BoxOrder" />
+        <activity android:name="com.gotaxiride.passenger.mBox.BoxDetailOrder" />
+        <activity android:name="com.gotaxiride.passenger.mBox.MboxWaiting" />
+        <activity android:name="com.gotaxiride.passenger.mBox.PickLocation" />
+        <activity
+            android:name="com.gotaxiride.passenger.mService.mServiceActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.gotaxiride.passenger.mService.mServiceBook" />
+        <activity android:name="com.gotaxiride.passenger.mService.mServiceWaiting" />
+        <activity android:name="com.gotaxiride.passenger.mService.mServiceProgress" />
+        <activity android:name="com.gotaxiride.passenger.mMassage.MassageActivity" />
+        <activity android:name="com.gotaxiride.passenger.mMassage.LocationPickerActivity" />
+        <activity android:name="com.gotaxiride.passenger.mMassage.WaitingMassageActivity" />
+        <activity android:name="com.gotaxiride.passenger.home.submenu.history.details.MSendDetailActivity" />
+        <activity android:name="com.gotaxiride.passenger.home.submenu.history.details.MMartDetailActivity" />
+
+        <service android:name="com.gotaxiride.passenger.service.GoTaxiMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.gotaxiride.passenger.service.GoTaxiInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.gotaxiride.passenger.mMassage.service.SendRequestMassageService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.gotaxiride.passenger.mRideCar.InProgressActivity"
+            android:label="@string/title_activity_in_progress"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.mRideCar.RateDriverActivity"
+            android:label="@string/title_activity_rate_driver"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.help.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.setting.UpdateProfileActivity"
+            android:label="@string/title_activity_update_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.setting.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.setting.TermOfServiceActivity"
+            android:label="@string/title_activity_term_of_service"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.setting.PrivacyPolicyActivity"
+            android:label="@string/title_activity_privacy_policy"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.setting.FAQActivity"
+            android:label="@string/title_activity_faq"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.TopUpActivity"
+            android:label="@string/title_activity_top_up"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.home.submenu.history.HistoryDetailActivity"
+            android:label="@string/title_activity_history_detail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gotaxiride.passenger.mSend.SendActivity"
+            android:label="@string/title_activity_send"
+            android:parentActivityName="com.gotaxiride.passenger.home.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gotaxiride.passenger.home.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.gotaxiride.passenger.mSend.AddDetailSendActivity"
+            android:label="@string/title_activity_add_detail_send"
+            android:parentActivityName="com.gotaxiride.passenger.mSend.SendActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gotaxiride.passenger.mSend.SendActivity" />
+        </activity>
+        <activity
+            android:name="com.gotaxiride.passenger.mMassage.InProgressFinishedMassageActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.gotaxiride.passenger.mFood.FoodActivity" />
+        <activity android:name="com.gotaxiride.passenger.mFood.NearmeActivity" />
+        <activity android:name="com.gotaxiride.passenger.mFood.FoodMenuActivity"
+            android:theme="@style/AppTheme.TransparentTheme"/>
+        <activity
+            android:name="com.gotaxiride.passenger.mFood.MakananActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.gotaxiride.passenger.mFood.BookingActivity" />
+        <activity android:name="com.gotaxiride.passenger.mFood.SearchRestoranActivity" />
+        <activity android:name="com.gotaxiride.passenger.mFood.KategoriSelectActivity" />
+        <activity android:name="com.gotaxiride.passenger.mFood.LocationPickerActivity" />
+        <activity android:name="com.gotaxiride.passenger.mFood.FoodWaitingActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gotaxiride.passenger.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.gotaxiride.passenger.home.ForgotPasswordActivity"/>
+        <activity android:name="com.gotaxiride.passenger.signUp.VerificationActivity"/>
+        <activity android:name="com.gotaxiride.passenger.signUp.ListCountryActivity">
+        </activity>
+    </application>
+
+</manifest>

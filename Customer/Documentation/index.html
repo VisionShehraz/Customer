@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>GOTAXI Customer App Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+	
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;GOTAXI Customer Application &rdquo; Documentation by &ldquo;Androgo Design&rdquo; v1.0.3</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;GOTAXI ~ On Demand All in One App Services Android&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 24/08/2018<br>
+					Update: 25/12/2018<br>
+					By: Androgo Design<br>
+					Email: <a href="mailto:salesgotaxi@gmail.com">salesgotaxi@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://codecanyon.net/user/androgo">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Introduction & Basic Configuration</a></li>
+			<li><a href="#maps">Structure and Setting Maps</a></li>
+			<li><a href="#fcm">Get google-services.json for FCM Push Notification Configuration</a></li>
+			<li><a href="#androidStudio">Configure File Android Studio</a></li>
+			<li><a href="#signed">Generated Signed APK</a></li>
+			<li><a href="#smsauto">Configuring SMS Authentication with Firebase</a></li>
+			<li><a href="#logo">Application Logo and Graphics</a></li>
+			
+		</ol>
+		
+		<hr>
+		
+		<h3 id="intro"><strong>A) Introduction & Basic Configuration</strong> - <a href="#toc">top</a></h3>
+		<p>  
+              GOTAXI Application is Native Android based Application which comes with Admin Panel.		
+		</p>
+		<h4><b> (a) Pre-Requisites :</b></h4>
+		
+		<li>Android SDK</li>
+		<li>Android Studio</li>
+		<li>Java Development Kit (JDK)</li><p></p>
+		
+		
+		
+					<h4><b>(b) Which Android Studio version is needed?</b></h4>
+					<p>
+		<li>We recommend that you use Android Studio version 3.0.1. Here are the links that you can use :</li>
+		<li><a href="https://dl.google.com/dl/android/studio/install/3.0.1.0/android-studio-ide-171.4443003-windows.exe">http://developer.android.com/intl/es/sdk/index.html</a></p></li>
+		
+		</p>
+       <h4><b>(c) How to open the project in Android Studio?</b></h4>
+      <li>Open Android Studio > Open an Existing Android Studio Project > Select Your Project build.gradle file > ok  </li>
+	  <li>Select Project </li><br>
+	  <img src="assets/images/image_8.jpg" alt="HTML Structure" style="width: 682px; height: 589px";/><br><p>
+	  <li>Browse to directory where you place “customer-master” or "driver-master" project and click OK.</li><br>
+	  <img src="assets/images/image_9.jpg" alt="HTML Structure" style="width: 382px; height: 489px";/><br>
+	  <p>
+	  
+	   <h4><b>(d) How to change the package name?:</b></h4>
+	   
+    
+	
+		
+	
+     	<ol>
+		<li>Now click on setting gear icon and deselect Compact Empty Middle Package.</li><br>
+		<img src="assets/images/image_17.jpg" alt="HTML Structure" style="width: 682px; height: 489px";/><p><br>
+		
+		<li>Now you will see each package folder is broken into parts</li><br><br>
+		<img src="assets/images/image_18.jpg" alt="HTML Structure" style="width: 442px; height: 289px";/><p><br>
+		
+		<li>Now right click on the first package folder, refactor and rename.</li><br><br>
+ <img src="assets/images/image_16.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/><p><br><br>
+ 
+	<li>	Now a warning will be displayed but you go ahead and click Rename Package. 
+		After that enter your domain name for the package name. </li><br><br>
+		
+		<img src="assets/images/image_19.jpg" alt="HTML Structure" style="width: 542px; height: 389px";/><p><br>
+		<img src="assets/images/image_20.jpg" alt="HTML Structure" style="width: 642px; height: 389px";/><p><br>
+		
+		<li> Now in the bottom of Android Studio it will display ‘Find Refactoring Preview’. Here click on ‘Do Refactor’</li><br><br>
+		<img src="assets/images/image_21.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/><p><br>
+		
+		<li>Now open build.gradle (Module: app) in Gradle Scripts. Here change the application id and click Sync Now. 
+		Finally it’s done and you have successfully changed the App package name in Android Studio: </li><br><br>
+		<img src="assets/images/image_22.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/><p><br>
+		
+
+
+		</ol>
+		
+		
+		
+		 
+        
+       <h4><b>(e) Basic Configuration:</b></h4>
+				
+		<p>
+		<li>Extract customer_gotaxi.zip to your workspace</li>
+		<li>Open the extracted folder/project from Android Studio</li>
+		<li>Open \GoTaxi\app\build.gradle
+	* Edit the applicationId from "com.gotaxiride.passenger" to your project id. This should be uinque so that there shouldn't be any conflict while uploading to Google Play Store.</li>
+		</p><p></p>
+		
+		<img src="assets/images/image_2.png" alt="HTML Structure" style="width: 782px; height: 489px";/>
+		<p></p>
+		
+	<p><b>Open Tools Menu in Android Studio, Select Firebase. Assistant Toolbar will be opened.</b> </p>
+
+		<p></p>
+	<ol><li>Select Cloud Messaging from the Firebase Assistant Toolbar</li>	
+	<li>Click Set up Firebase Cloud Messaging</li>
+    <li>Click On Connect to Firebase</li>
+		<p></p>
+	<p><img src="assets/images/image_27.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/></p>
+	<p></p>
+	 <li>Click Sync</li>
+	<p><img src="assets/images/image_28.jpg" alt="HTML Structure" style="width: 800px; height: 335px";/></p>
+	
+	<li>Complete the process described in the toolbar</li>
+	<p></p>
+	<p><img src="assets/images/image_29.jpg" alt="HTML Structure" style="width: 382px; height: 489px";/><br></p></ol>
+	
+	<p></P>
+		<hr>
+
+		<h3 id="maps"><strong>B) Structure and Setting Maps </strong> - <a href="#toc">top</a></h3>
+
+		<p>
+		<b> a) Open </b><a href= "http://console.developer.google.com/">http://console.developer.google.com/</a>
+		</p> 
+       
+	   <p>* Select your Project
+		<br>* Select Library From the Side Menu
+	    <br>*	Enable the following Google APIs :</p>
+	<ul>
+		     a.	Maps SDK fo Android
+	    <br> b.	Maps JavaScript API
+	    <br> c.	Places SDK for Android
+	    <br> d.	Maps Static API
+	    <br> e.	Place API
+	    <br> f.	Geocoding API    
+	    <br> g.	Directions API   	
+	    <br> h.	Distance Matrix API   
+	    <br> i.	Geolocation API    
+		<p></p>
+		
+		<p></p>
+		
+		</ul>
+		<b>Warning : </b><br><br>
+		Starting on July 11, 2018 the Google Cloud Platform has implemented rules related to the use of Maps API.<br>
+		You must register a Google Cloud Platform account using a credit card or other payment method. Please visit registration at
+		<a href= "https://console.cloud.google.com/freetrial/">https://console.cloud.google.com/freetrial/</a><br><br>
+		
+     <p><b> b) Open </b> <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&reusekey=true">https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&reusekey=true.</a></p>
+	 <p></p>
+	<ul><li>	Select your project</li>
+	<li>	Select Google Maps Android Api</li>
+	<li>	Generate and copy the Corresponding API KEY</li>
+	<li>	Open \GoTaxi\app\src\main\res\values\google_maps_api.xml</li>
+	<li>	Change api_key value in <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+                  GOOGLE_API_KEY</string> from GOOGLE_API_KEY to the copied API KEY.</li><br>
+				<img src="assets/images/image_7.jpg" alt="HTML Structure" style="width: 746px; height: 401px";/><p></p>
+				
+	<li>Open File Java \GoTaxi\app\src\main\java\com\gotaxiride\passenger\gmap\GMapDirection.java</li>
+	<li>Please enter API_KEY Google Maps</li><br>
+				
+				
+				<img src="assets/images/image_14.jpg" alt="HTML Structure" style="width: 746px; height: 401px";/><p>
+				  </ul><br>
+	 
+	 
+	 
+	 <h3 id="fcm"><strong>C) Get google-services.json for FCM Push Notification Configuration </strong> - <a href="#toc">top</a></h3>
+	 <b> a) Open </b>  <a href="https://console.firebase.google.com">https://console.firebase.google.com</a><p></p>
+
+<ol>
+	<li> Before you do step change the package name, you must do this step for firebase project configuration</li>
+	<li>Please note : this step is mandatory to generate google-services.json file</li><br>
+	<img src="assets/images/image_1a.jpg" alt="HTML Structure" style="width: 746px; height: 471px";/><p>
+	<li><a href="https://console.firebase.google.com">Visit Firebase console </a></li>
+	<li>Please register or log in first and then select create new project. In the dialog window enter the name of the project that will be created and the contents of the state and then click the create project to continue.</li><br>
+    <img src="assets/images/image_1b.jpg" alt="HTML Structure" style="width: 383px; height: 497px";/><p>
+	<li>After successfully creating a project on Firebase then the page will be redirected to the dashboard project that has been made.</li><br>
+<img src="assets/images/image_1c.jpg" alt="HTML Structure" style="width: 746px; height: 471px";/><p>
+	<li>Then on the dashboard Firebase select Add Firebase to your Android app. In the next dialog window enter the name of the Android application package and SHA1 of fingerprints Certificate (optional).</li>
+	<br>
+	 <img src="assets/images/image_1d.jpg" alt="HTML Structure" style="width: 583px; height: 497px";/><p>
+	<li>Next will download the configuration file json google-services.json automatically, which will be added in the directory app in the Android project.</li>
+	<br>
+	 <img src="assets/images/image_1e.jpg" alt="HTML Structure" style="width: 583px; height: 497px";/><p>
+	<li>Follow the steps to generate SHA1 Fingerprint</li>
+	<li>Add the SHA1 Fingerprint to your app in Console of firebase</li><br>
+	<img src="assets/images/image_1.png" alt="HTML Structure" style="width: 746px; height: 471px";/>
+		<p>
+	<li>Download the google_services.json and mopve to project/app folder</li>
+	</ol>
+
+	<img src="assets/images/image_1f.jpg" alt="HTML Structure" style="width: 746px; height: 471px";/>
+		<p></p>
+	<hr>
+	
+	
+	
+		
+		<h2 id="androidStudio"><strong>D) Configure File Android Studio</strong> - <a href="#toc">top</a></h2><br>
+		
+		<h3><b>(a) Server Connection </b></h3>
+		<ol><li>Open File Java  \GoTaxi\app\src\main\java\com\gotaxiride\passenger\api\ServiceGenerator.java </li>
+		<li>Change API_VERSION to match your URL_WEB</li><br>
+		<img src="assets/images/image_11.jpg" alt="HTML Structure" style="width: 746px; height: 471px";/>
+		<p>
+		</ol>
+		<h3><b>(b) API Key Configuration (Server_Key Cloud Messaging)</b></h3>
+		<ol><li>Open \GoTaxi\app\src\main\java\net\gotaxi\passenger\config\General.java </li>
+	    <li>Change FCM KEY New Server Key to match <strong>public static final String FCM_KEY.</strong> <i>(Point 1)</i></li></ol>
+		<img src="assets/images/image_10.jpg" alt="HTML Structure" style="width: 1000px; height: 520px";/>
+		</p>
+		<p><i>update documentation : 25 December 2018</i></p>
+		<h3><b>(c) Currency Setting</b></h3>
+		<p>Change <strong>Currency</strong> to match <strong>public static final String MONEY.</strong> <i>(Point 2)</i></p>
+		
+		<h3><b>(d) Number SOS</b></h3>
+		<p>Change <strong>Number SOS</strong> to match <strong>public static final String NUMBER_SOS.</strong> <i>(Point 3)</i></p>
+		
+		<h3><b>(e) RTL MODE</b></h3>
+		<p>If you use RTL Language e.g : Arabic Language or other, set true <i>(Point 4)</i></p>
+		
+		<h3><b>(f) Setting distance in KM or Miles</b>  <i>(Point 5)</i></h3> 
+	<ol><li>
+	<strong>Settings in KM</strong> You must set the <i>public static final String UNIT_OF_DISTANCE = <strong> "Km"</strong>;</i> <br>AND  
+	You must set the <i>public static final Float RANGE_VALUE = <strong>1000f </strong>;</i>
+	</li><p></p>
+	<li>
+	<strong>Settings MILES</strong> You must set the <i>public static final String UNIT_OF_DISTANCE = <strong> "Miles"</strong>;</i> <br>AND  
+	You must set the <i>public static final Float RANGE_VALUE = <strong>1609f </strong>;</i>
+	</li>
+	</ol>
+	
+	<h3><b>(g) Setting menu names on Home</b></h3>
+		<p>Please change the name of the Home Menu. The Menu Name must be the same on String.xml (point 6)</p>
+		
+	 <p><h3><b>h) Change Application Name and Text Inside the Application</b></h3></p>
+	 
+	   Open \GoTaxi\app\src\main\res\values\strings.xml<br>
+	     * Change app_name value from GoTaxi, "< string name="app_name">GoTaxi< /string>" <br>to
+          < string name="app_name">Your App Name< /string><br><br>
+		  <p> Note : You need to change string tag values on strings.xml file, because this is contain text components which shown inside the application besides content that is retrieved from the admin panel.</P>
+		  	<p>	<img src="assets/images/image_5.png" alt="HTML Structure"  style="width: 524px; height: 333px";/></p>
+	<p>Open Android Studio  \GoTaxi\app\src\main\res\values\colors.xml
+	<br>Change colorPrimary, colorPrimayDark and colorAccent colours to change the overall theme colors
+	<br>Change colour codes wherever is necessary</p>
+	
+	
+	
+	 <p><h3><b>i) Change Multi-Language </b></h3></p>
+	 You can change the appearance of the language according to the image below: <p>
+	 Open \GoTaxi\app\src\main\res\values\strings.xml<br>
+	  
+		  <p>	<img src="assets/images/image_15.jpg" alt="HTML Structure"  style="width: 724px; height: 433px";/></p>
+		<hr>
+		<h2 id="signed"><strong>E) Generated Signed APK</strong> - <a href="#toc">top</a></h2>
+	
+		<p>To sign your app in release mode in Android Studio, follow these steps:</p>
+	
+		<p></p>
+		
+			<ol>
+				<li>On the menu bar, click Build → Generate Signed APK.</li>
+				<li> If you already have a keystore, go to step 4.</li>
+				<li>On the Generate Signed APK Wizard window, click Create new to create a new keystore.</li>
+				<li>On the New Key Store window, provide the required information, your key should be valid for at least 25 years, so you can sign app updates with the same key through the lifespan of your app.</li>
+				<p></p>
+				<p><img src="assets/images/image_30.jpg" alt="HTML Structure" style="width: 724px; height: 433px";/></p>
+				
+				<li>On the Generate Signed APK Wizard window, select a keystore, a private key, and enter the passwords for both. Then click Next</li>
+					<p></p>
+					
+		        <img src="assets/images/image_3.png" alt="HTML Structure" style="width: 524px; height: 333px";/>
+		        <p></p>
+		
+				<li>On the next window, select a destination for the signed APK and Signature Versions.</li>
+				<li>Select Signature Version : V1 (Jar Signature)and V2 (Full APK Signature)</li>
+				<li>click Finish and the signed apk will generated.</li>
+				<p></p>
+				<img src="assets/images/image_4.png" alt="HTML Structure"  style="width: 524px; height: 333px";/>
+			</ol>
+		
+		<p></p>
+		
+		<hr>
+		
+		<p><i>Update documentation Feature : 25 December 2018</i></p>
+		<h2 id="smsauto"><strong>F) Configuring SMS Authentication with Firebase</strong> - <a href="#toc">top</a></h2>
+		<p>In order for a project to be able to signup using a phone number, you must first activate the login method using a <strong>PHONE</strong> in Firebase Authentication, as shown in the following image:</p>
+		<p><strong>STEP 1</strong></p>
+		<img src="assets/images/image_23.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/><p><br>
+		<p><strong>STEP 2</strong></p>
+		<img src="assets/images/image_24.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/><p><br>
+		<p><strong>STEP 3</strong></p>
+		<img src="assets/images/image_25.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/><p>
+		
+		<p><strong>IMPORTANT!!!</strong></p>
+		<p><strong>1.  You have to make sure both Fingerprint is debug key and Signed apk already exists. If the two Fingerprints do not exist, the verification SMS will not be sent. </strong>
+		<br>Please follow the instructions in point <a href="#signed"><strong>E) Generated Signed APK.</strong></a> <br>Please see the picture :</p>
+		<img src="assets/images/image_26.jpg" alt="HTML Structure" style="width: 782px; height: 489px";/><p>
+		<p><strong>2.  Never sign a fingerprint with the Google Play console when uploading File Apps. This will also result in SMS Verification never being sent. This happens because of fingerprint differences between Firebase and Google Play Console.</strong></p>
+		<p><strong>FINISH.</strong></p>
+		<hr>
+		
+		
+		<h2 id="logo"><strong>G) Application Logo and Graphics</strong> - <a href="#toc">top</a></h2>
+		
+		<p><b>a) Change Application Logo</b></p>
+		<ol>
+			<li>Open Android Studio <b> → File → New → Image Asset</b></li>
+			<li>You can choose 2 types of your icon type, that is Launcher Icon (Adaptive and Legacy) or (Legacy Only)</li>
+			<li>Recommended to use Launcher Icon <b>(Adaptive and Legacy)</b></li>
+			<li>Browse and choose your image file icon (.png) format with square dimension and start customize your icon</li>
+			<li>Make sure the resource name is <b>"ic_launcher" </b> → Next → Finish</li>
+		</ol>
+		<p>	<img src="assets/images/image_6.png" alt="HTML Structure"  style="width: 524px; height: 333px";/></p>
+		<b>b) Change Graphics</b><br><br>
+		<p>You will find all image into <b>/res/drawable/, /res/drawable-mdpi/, /res/drawable-hdpi/, /res/drawable-xhdpi/ </b> folder. <br>Just create your own graphics and replace those files. Create seperate graphics of different device screen sizes & place them into other drawble folders <b>(drawable-hdpi & drawable-xhdpi) </b> with same file name found at drawable-mdpi folder. Check here for more information:
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		<h3><strong>IMPORTANT</strong> - <a href="#toc">top</a></h2>
+		<p>We don't offer <strong>REFUND </strong>if the item has been <strong>DOWNLOAD.</strong></p>.
+		<p class="append-bottom alt large"><strong>Androgo</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

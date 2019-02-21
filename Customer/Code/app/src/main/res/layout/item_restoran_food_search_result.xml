@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/restoranFoodSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/restoranFoodSearchResult_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mfood_explore" />
+
+        <TextView
+            android:id="@+id/restoranFoodSearchResult_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/restoranFoodSearchResult_distance"
+            android:layout_toRightOf="@+id/restoranFoodSearchResult_icon"
+            android:textSize="20sp"
+            tools:text="Lorem ipsum dolor sit amet, ei qui deleniti appellantur conclusionemque." />
+
+        <TextView
+            android:id="@+id/restoranFoodSearchResult_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restoranFoodSearchResult_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/restoranFoodSearchResult_distance"
+            android:layout_toRightOf="@+id/restoranFoodSearchResult_icon"
+            tools:text="Restoran" />
+
+        <TextView
+            android:id="@+id/restoranFoodSearchResult_distance"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            tools:text="600.00 km" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimarySoft" />
+
+</LinearLayout>

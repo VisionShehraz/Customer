@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corners_edittext_dark">
+
+
+
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/isiChat"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:background="@drawable/rounded_corners_edittext_dark"
+            android:textColor="@color/black"
+            android:text="Lorem ipsum dolo sir amet amet..Lorem ipsum dolo sir amet amet..Lorem ipsum dolo sir amet amet..Lorem ipsum dolo sir amet amet..Lorem ipsum dolo sir amet amet.."/>
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/timeChat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="21:10"
+                android:textSize="10dp"
+                android:gravity="bottom"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/statusChat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:tint="@color/material_green_500"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_status_delivered"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_weight="10">
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/imageUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile"
+            app:siBorderColor="@color/background_color"
+            app:siBorderWidth="2dp"
+            android:padding="5dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
+

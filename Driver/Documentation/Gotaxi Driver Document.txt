@@ -1,0 +1,79 @@
+﻿Documentation : 
+
+Pre-Requisites :
+1. 	Android SDK
+2. 	Android Studio
+3. 	Java Development Kit (JDK)
+
+
+1. 	Extract driver_gotaxi.zip to your workspace
+2. 	Open the extracted folder/project from Android Studio
+3. 	Open \GoTaxi\app\build.gradle
+	* Edit the applicationId from "net.gotaxi.passenger" to your project id. This should be uinque so that there shouldn't be any conflict while uploading to Google Play Store.
+
+4.	Open Tools Menu in Android Studio, Select Firebase. Assistant Toolbar will be opened.
+	* 	Select Cloud Messaging from the Firebase Assistant Toolbar	
+	*	Click Set up Firebase Cloud Messaging
+	*	Click On Connect to Firebase
+	*	Complete the process described in the toolbar
+
+5.	Open http://console.developer.google.com/
+	*	Select your Project
+	*	Select Library From the Side Menu
+	*	Enable the following Google APIs :
+
+	     a.	Google Maps Android API 
+	     b.	Google Maps JavaScript API   
+	     c.	Google Places API for Android
+	     d.	Google Static Maps API ok
+	     e.	Google Places API Web Service  
+	     f.	Google Maps Geocoding API    
+	     g.	Google Maps Directions API   	
+	     h.	Google Maps Distance Matrix API   
+	     i.	Google Maps Geolocation API    
+
+
+6.	Open https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&reusekey=true
+	* 	Select your project
+	*	Select Google Maps Android Api
+	*	Generate and copy the Corresponding API KEY
+	*	Open \GoTaxi\app\src\main\res\values\google_maps_api.xml
+	*	Change api_key value in <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+                  GOOGLE_API_KEY</string> from GOOGLE_API_KEY to the copied API KEY.
+	
+
+
+7.	Open https://console.firebase.google.com.
+	*	Select your project
+	*	Open https://developers.google.com/android/guides/client-auth
+	* 	Follow the steps to generate SHA1 Fingerprint
+	*	Add the SHA1 Fingerprint to your app in Console of firebase
+	*	Download the google_services.json and mopve to project/app folder
+
+ 
+8.	Open \GoTaxi Driver\app\src\main\java\com\gotaxi\driver\service\MyConfig.java 
+	* Change API_VERSION to match your URL_WEB
+        * Change FCM KEY New Server Key to match  public static String GCM_KEY
+
+
+
+	
+10. Open \GoTaxi\app\src\main\res\values\strings.xml
+	* Change  app_name value from GoTaxi Driver, "<string name="app_name">GoTaxi Driver</string>" to 
+          <string name="app_name">Your App Name</string>
+
+11. 	Open \GoTaxi\app\src\main\res\values\colors.xml
+	* Change colorPrimary, colorPrimayDark and colorAccent colours to change the overall theme colors
+	* Change colour codes wherever is necessary
+
+12. To Generate a Debug Build, Click on Build->Build Apk(s) from menu in Android Studio
+
+13. To Generate a Release Build, Click on Build->Generate Signed Apk, from menu in Android Studio,
+	* This will open up a Generate Signed Apk Popup, Click on the Create new if there is no KeyStore created and continue to create a Keystore
+	* Click on Browse button "..." on Generate Signed Apk to open the Select/Create Key Popup
+	* Create a new Key if not already exists.
+	* Click on next on Generate signed Apk to open destinationselection window. Select a destination for your Signed Apk.
+	* Click on Finish to create a Release Build APK in the destination you specified.
+
+
+14. Upload the Signed Release Apk to google Play Store.	

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kategori_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/kategori_img"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/kategori_img"
+        android:alpha="0.6"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/kategori_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/material_light_white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

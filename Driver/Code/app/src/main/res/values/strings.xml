@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">GoTaxi Driver</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile">My Profile</string>
+    <string name="action_navigate">Navigation</string>
+    <string name="info_klik">Click the button below if you agree to take this order</string>
+
+
+    <string name="Go_Ride">Go Ride</string>
+    <string name="Go_Car">Go Car</string>
+    <string name="Go_Food">Go Food</string>
+    <string name="Go_Mart">Go Mart</string>
+    <string name="Go_Send">Go Send</string>
+    <string name="Go_Massage">Go Massage</string>
+    <string name="Go_Box">Go Box</string>
+    <string name="Go_Service">Go Service</string>
+    <string name="powered">Powered by Androgo</string>
+
+    <string name="notif_activity">New Order</string>
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <string name="title_activity_maps">Maps</string>
+    <string name="Statuskerja">Your account is still OFF. \nSelect Work Start Button \nto receive orders</string>
+    <string name="Status_aktif">Ready to accept orders. \nMake sure your GPS is ON.</string>
+    <string name="withdraw">Enter the amount of money you want to take. \nMake sure your account number is correct</string>
+    <string name="lorem_ipsum">This is a sample feedback provided by the customer to the driver after the order..</string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sir amet amet Lorem ipsum dolor sir amet amet
+        Lorem ipsum dolor sir amet amet Lorem ipsum dolor sir amet amet Lorem ipsum dolor sir amet
+        amet Lorem ipsum dolor sir amet amet Lorem ipsum dolor sir amet amet Lorem ipsum dolor sir  </string>
+    <string-array name="list_bank">
+        <item>Bank BCA</item>
+        <item>Bank BRI</item>
+        <item>Bank BNI</item>
+        <item>Bank BTN</item>
+    </string-array>
+    <string-array name="list_maximum_shop">
+        <item>$5</item>
+        <item>$10</item>
+        <item>$20</item>
+        <item>$30</item>
+        <item>$50</item>
+        <item>$100</item>
+        <item>$150</item>
+    </string-array>
+    <string name="button_signIn">LOGIN</string>
+    <string name="button_signUp">REGISTER</string>
+    <string name="button_dontHaveAccount">Do not have an account yet?</string>
+    <string name="Change_Vehicle">Change Vehicle Details</string>
+
+
+    <!-- menu left -->
+    <string name="transaksi">Transaction History</string>
+    <string name="Deposit">My Wallet</string>
+    <string name="My_withdraw">Withdraw</string>
+    <string name="Rating">Rating</string>
+    <string name="Feedback">Feedback</string>
+    <string name="my_profile">Profile</string>
+    <string name="Maximum">Maximum : </string>
+
+    <!-- menu right -->
+    <string name="Terima_Otomatis">Accept Auto</string>
+    <string name="Saldo_gift">money used</string>
+    <string name="my_jobs">MY WORK FEATURES</string>
+    <string name="msg_job">Insufficient balance, will not accept the order</string>
+
+    <!-- dasboard -->
+    <string name="start_work">Start working</string>
+    <string name="mart_nearDriver">Nearest Customer</string>
+    <string name="off_work">Start Working Status temporarily OFF</string>
+    <string name="warning_close">Are you sure you want to stop getting orders?</string>
+    <string name="low_money">Sorry, your balance is not sufficient to receive orders. \nPlease fill in your Deposit balance. \nThe remaining balance is at least $ 10 to start working again.</string>
+    <string name="Fill_balance">Fill balance</string>
+    <string name="Happy_working">Happy working again.</string>
+    <string name="Warning">Warning</string>
+    <string name="Waring_close">Do you want to exit the application? \nYou will not receive orders</string>
+
+    <!-- menu login  -->
+    <string name="phone">Phone number</string>
+    <string name="Close">Close</string>
+    <string name="Connection_problem">Connection problem</string>
+    <string name="try_again">Please try again</string>
+    <string name="Error">There is an error</string>
+
+    <!-- default -->
+    <string name="Login_Failed">Login Failed</string>
+
+
+    <!-- mbox -->
+    <string name="list_sending">List of Shipping Objectives</string>
+    <string name="transaction">Transaction</string>
+    <string name="Cost_Warning">Cost Warning</string>
+    <string name="calling">Do you want to call this number?</string>
+
+    <!-- send items   -->
+    <string name="title_shop">List of Shopping Items</string>
+
+
+    <!-- Wallet -->
+    <string name="payment_receipt">Enter your payment receipt</string>
+    <string name="update_bank">Please update your account data in my Account menu!</string>
+    <string name="Nominal_withdraw">Please enter a Withdraw nominal</string>
+    <string name="Balance_withdraw">Remaining balance minimum $100 After Withdraw.</string>
+    <string name="minimum_withdraw">100</string>
+    <string name="Available_Balance_amount">Available Balance amount : $</string>
+    <string name="Process_approve">Withdraw Fund will be processed soon by Admin</string>
+    <string name="take_money">Take Money</string>
+
+    <!-- Transaction History -->
+    <string name="Transaction_History">Transaction History</string>
+    <string name="Delivery_Details">Delivery Details</string>
+    <string name="Destination_Details">Destination Details</string>
+    <string name="Total_Cost">Please enter the total cost</string>
+    <string name="shopping_receipt">Please enter a photo of the shopping receipt.</string>
+    <string name="Shopping_list">Shopping list</string>
+    <string name="Order_time">Order time has run out!</string>
+    <string name="Estimated_costs">Estimated costs</string>
+
+    <!-- Order Fragment -->
+    <string name="Purchase_order">Status: Purchase order</string>
+    <string name="Take_stuff">Status : Take stuff</string>
+    <string name="Go_location">Status: Go to location</string>
+    <string name="pick_up">Status: Go to pick up</string>
+    <string name="Deliver_items">Status: Deliver items</string>
+    <string name="Running_service">Status: Running service</string>
+    <string name="Deliver">Status: Deliver the customer</string>
+    <string name="contact_driver">Do you want to contact the driver</string>
+
+    <!-- Edit Setting -->
+    <string name="Brand_column">Brand column please fill out</string>
+    <string name="Type_Field">Please type field</string>
+    <string name="Police_number">Police number field please fill out</string>
+    <string name="Column_colors">Column colors please fill out</string>
+
+    <!-- Notification -->
+    <string name="Order_is_not_available">Order is not available</string>
+    <string name="Customer_Pickup">Customer Pickup</string>
+
+    <!--  Deposit -->
+    <string name="Account_owner">Account owner</string>
+    <string name="name_owner">Name Alibaba</string>
+    <string name="Upload_transfer">Upload Evidence Transfer</string>
+
+    <!-- Order Notification -->
+    <string name="Go_Pick_up">Pick-up</string>
+    <string name="Destination">Destination</string>
+    <string name="Order_Information">Order Information</string>
+
+    <!--forgot password-->
+    <string name="forgot_message">Enter the email that used during registration.</string>
+    <string name="forgot_failed_message">Email is not found in our database!</string>
+    <string name="forgot_success_message">Password has been sent on your mail!</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="title_forgot_password">FORGOT PASSWORD</string>
+    <string name="edt_email">Email</string>
+    <string name="btn_send">SEND</string>
+
+    <string name="setting_changeLanguage">Change Language</string>
+    <string name="language_setting">Language Setting</string>
+    <string name="lang_dialog_title">Change Language</string>
+    <string name="lang_dialog_message">Choose Language Bellow</string>
+    <string name="change">Change</string>
+    <string name="text_cancel">Cancel</string>
+
+    <string-array name="lang_select">
+        <item>Arabic</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Portuguese</item>
+        <item>Indonesia</item>
+        <item>English</item>
+    </string-array>
+
+</resources>

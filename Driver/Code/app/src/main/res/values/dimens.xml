@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="mapHeight">200dp</dimen>
+
+    <dimen name="header_height">150dp</dimen>
+
+    <!-- SignUp specific -->
+    <dimen name="signUp_size">22sp</dimen>
+    <dimen name="signUp_desc">12sp</dimen>
+    <dimen name="martMargin">8dp</dimen>
+
+</resources>

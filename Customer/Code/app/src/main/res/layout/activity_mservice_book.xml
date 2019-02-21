@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_light_white"
+    android:orientation="vertical"
+    tools:context="com.gotaxiride.passenger.mService.mServiceBook">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/splash_bg_color"
+            android:scaleType="fitXY"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_back_home" />
+
+        <TextView
+            android:id="@+id/mService_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/home_mService"
+            android:textAllCaps="true"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/mService_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_light_white"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/mService_location"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@null"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_location_blue"
+                android:hint="@string/mbox_location"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mService_setlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mService_space"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mService_locbtn"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/ride_setPickUp"
+                android:textColor="@color/material_light_white" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_triangle" />
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/mService_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/mservice_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/service_payment"
+            android:background="@color/blueSoft"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.5"
+                android:padding="8dp"
+                android:text="@string/mbox_price"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_pricetag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:padding="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/service_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/service_order"
+            android:background="@color/material_light_white"
+            android:clickable="true"
+            android:paddingLeft="8dp">
+
+            <RadioGroup
+                android:id="@+id/service_paymentgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/service_mpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/text_mPay"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:theme="@style/PaymentButton" />
+
+
+                <RadioButton
+                    android:id="@+id/service_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:checked="true"
+                    android:text="@string/text_cash"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:theme="@style/PaymentButton" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/mpay_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="108dp"
+                    android:text="@string/text_updating"
+                    android:textColor="@color/material_blue_grey_700"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/service_topup"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/text_topUp"
+                    android:textColor="@color/material_blue_grey_700" />
+
+                <TextView
+                    android:id="@+id/discountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/mpay_balance"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/ride_discount"
+                    android:textColor="@color/material_blue_grey_700"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/service_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/order_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimarySoft"
+                android:clickable="false"
+                android:text="@string/text_order"
+                android:textColor="@color/material_light_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

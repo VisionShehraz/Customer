@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/history_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabLayoutHeight"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimary"
+            app:stl_clickable="true"
+            app:stl_defaultTabTextColor="@color/material_light_white"
+            app:stl_distributeEvenly="true"
+            app:stl_dividerColor="@color/transparent"
+            app:stl_indicatorColor="@color/colorYellow"
+            app:stl_indicatorInFront="true"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="4dp"
+            app:stl_underlineColor="@color/transparent" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/history_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

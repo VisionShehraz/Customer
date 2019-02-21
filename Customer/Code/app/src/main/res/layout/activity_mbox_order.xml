@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mbox_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_light_white"
+    android:orientation="vertical"
+    tools:context="com.gotaxiride.passenger.mBox.BoxOrder">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/splash_bg_color"
+            android:scaleType="fitXY"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/box" />
+
+        <TextView
+            android:id="@+id/mbox_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/home_mBox"
+            android:textAllCaps="true"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/mbox_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimarySoft"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.75"
+            android:padding="8dp"
+            android:text="@string/mbox_price"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mbox_pricetag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.25"
+            android:gravity="right"
+            android:padding="8dp"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.gotaxiride.passenger.utils.view.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/price_space"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/material_blue_grey_200"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_blue_grey_50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/mbox_drivernear"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_blue_grey_50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/mbox_origin"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pin_pickup" />
+
+                    <EditText
+                        android:id="@+id/org_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:clickable="true"
+                        android:cursorVisible="false"
+                        android:drawableRight="@drawable/ic_right_button"
+                        android:hint="@string/mbox_location"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:src="@drawable/ic_loc_detail"-->
+                <!--android:scaleType="fitCenter"/>-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/org_locdetail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="@string/mbox_location_detail"-->
+                <!--android:textSize="16sp"-->
+                <!--android:inputType="text"-->
+                <!--android:backgroundTint="@color/colorPrimary" />-->
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_contact_person" />
+
+                    <TextView
+                        android:id="@+id/org_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="5dp"
+                        android:backgroundTint="@color/black"
+                        android:clickable="true"
+
+                        android:cursorVisible="false"
+                        android:drawableRight="@drawable/ic_right_button"
+                        android:hint="@string/mbox_contact_person"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_orgcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="32dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/org_contactname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:hint="@string/mbox_name"
+                        android:inputType="text"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/org_contactphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:hint="@string/mbox_phone"
+                        android:inputType="phone"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_loc_detail" />
+
+                    <EditText
+                        android:id="@+id/org_instruction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:hint="@string/mbox_instruction"
+                        android:inputType="text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mbox_destinasiitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/mbox_removeDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/material_red_600"
+                    android:text="@string/mbox_remove"
+                    android:textColor="@color/material_light_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/mbox_nextdestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/material_green_500"
+                    android:text="@string/mbox_nextdest"
+                    android:textColor="@color/material_light_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_blue_grey_50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/mbox_item_deliver"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_loc_detail" />
+
+                <EditText
+                    android:id="@+id/mbox_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/mbox_items"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/note_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:text="@string/mbox_note_items"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_blue_grey_50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/mbox_extra_feature"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:weightSum="4">
+
+                <CheckBox
+                    android:id="@+id/mbox_loadservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:padding="5dp"
+                    android:text="@string/mbox_loading_service"
+                    android:textColor="@color/material_blue_grey_700"
+                    android:theme="@style/PaymentButton" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1" />
+
+                <ImageView
+                    android:id="@+id/btn_kurang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mbox_minus" />
+
+                <ImageView
+                    android:id="@+id/btn_tambah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mbox_nambah" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/additional_shipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="47dp"
+                android:text="@string/mbox_additional"
+                android:textColor="@color/material_blue_grey_700"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/material_blue_grey_50" />
+
+            <TextView
+                android:id="@+id/note_extraFeature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="47dp"
+                android:text="@string/mbox_note_extra_feature"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/shipper_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="47dp"
+                android:text="+ IDR 50000 per shipper"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_blue_grey_50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:text="@string/mbox_insurance"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="3"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/mbox_insurance"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/mbox_loading_service"-->
+            <!--android:textColor="@color/material_blue_grey_700"-->
+            <!--android:theme="@style/PaymentButton"/>-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_ganti"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:text="@string/mbox_ganti_opsi"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/material_light_white"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+            <!---->
+            <!--android:id="@+id/range_insurance"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:paddingLeft="47dp"-->
+            <!--android:text="@string/mbox_insurance_upto"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/material_blue_grey_700"/>-->
+
+            <Spinner
+                android:id="@+id/insurance_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/material_blue_grey_50" />
+
+            <TextView
+                android:id="@+id/note_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="45dp"
+                android:text="@string/mbox_note_insurance"
+                android:textSize="14sp" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="@color/material_blue_grey_50">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/mbox_booking"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="16sp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="3dp"-->
+            <!--android:background="@color/material_blue_grey_200" />-->
+
+            <!--<RadioGroup-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:weightSum="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/mbox_picknow"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:padding="10dp"-->
+            <!--android:checked="true"-->
+            <!--android:text="@string/mbox_picknow"-->
+            <!--android:textColor="@color/material_blue_grey_700"-->
+            <!--android:theme="@style/PaymentButton" />-->
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/mbox_picklater"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="@string/mbox_picklater"-->
+            <!--android:textColor="@color/material_blue_grey_700"-->
+            <!--android:theme="@style/PaymentButton"/>-->
+
+            <!--</RadioGroup>-->
+
+            <LinearLayout
+                android:id="@+id/pickuptime_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mservice_time" />
+
+                <EditText
+                    android:id="@+id/mbox_pickuptime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/black"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:hint="@string/mbox_items"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/material_blue_grey_50"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <CheckBox
+                    android:id="@+id/mbox_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/mbox_term"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:theme="@style/PaymentButton" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/material_blue_grey_200" />
+
+            <Button
+                android:id="@+id/mbox_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimarySoft"
+                android:text="@string/text_next"
+                android:textColor="@color/material_light_white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </com.gotaxiride.passenger.utils.view.CustomScrollView>
+
+
+</LinearLayout>

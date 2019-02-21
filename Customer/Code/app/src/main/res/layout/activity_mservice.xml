@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Toolbar.Light" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center_horizontal"
+                android:paddingTop="@dimen/spacing_regular"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/auto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="@dimen/spacing_regular"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_regular"
+                android:text="@string/home_mService"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:fontFamily="@font/neosanspro_medium"/>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+
+        <ScrollView
+            android:id="@+id/scroll_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mService_btnnext"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mService_AC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/service_ac" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mService_layanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/material_light_white"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical"
+                        android:paddingTop="3dp"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_mservice_layanan" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="@string/service_layanan"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp">
+
+                        <EditText
+                            android:id="@+id/service_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/background_color"
+                            android:clickable="true"
+                            android:drawableEnd="@drawable/ic_right_button"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:textColor="@color/material_light_black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mService_actype"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/material_light_white"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical"
+                        android:paddingTop="3dp"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_mservice_actype" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="@string/service_actype"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="15dp">
+
+                        <EditText
+                            android:id="@+id/actype_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/background_color"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/ic_right_button"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:textColor="@color/material_light_black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mService_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/material_light_white"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical"
+                        android:paddingTop="3dp"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_mservice_quantity" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="@string/service_quantity"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp">
+
+                        <EditText
+                            android:id="@+id/quantity_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/background_color"
+                            android:drawableRight="@drawable/ic_right_button"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textColor="@color/material_light_black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mService_residential"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/material_light_white"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_mservice_residential" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="@string/service_residential"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp">
+
+                        <EditText
+                            android:id="@+id/residential_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/background_color"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/ic_right_button"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:textColor="@color/material_light_black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mService_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/material_light_white"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical"
+                        android:paddingTop="3dp"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/ic_action_help" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="@string/service_problem"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp">
+
+                        <EditText
+                            android:id="@+id/problem_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/background_color"
+                            android:drawableRight="@drawable/ic_right_button"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:textColor="@color/material_light_black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/mService_btnnext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_round_green"
+            android:layout_margin="5dp"
+            android:text="@string/text_next"
+            android:textColor="@color/material_light_white"
+            android:textSize="18sp"
+            android:fontFamily="@font/neosans_pro_regular"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

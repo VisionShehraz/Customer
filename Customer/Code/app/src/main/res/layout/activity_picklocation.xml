@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_picklocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gotaxi.passenger.mBox.PickLocation">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:adjustViewBounds="true"
+            android:background="@color/splash_bg_color"
+            android:scaleType="fitXY"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/box" />
+
+        <TextView
+            android:id="@+id/mService_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/home_mBox"
+            android:textAllCaps="true"
+            android:textColor="@color/text_menu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/neosans_pro_regular"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/locationPicker_autoCompleteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:foregroundTint="@color/white"
+                android:hint="@string/mart_searchLocation"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+        </android.support.v7.widget.CardView>
+
+        <fragment
+            android:id="@+id/map_picklocation"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <Space
+            android:id="@+id/picklocation_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/picklocation_space"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/loading"
+                    android:layout_alignTop="@+id/loading"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/ride_destination"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_destination" />
+
+                <ProgressBar
+                    android:id="@+id/loading"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:theme="@style/RedAccent"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@+id/rideCar_detail"
+            android:background="@drawable/bg_gradient_soft"
+            />
+
+        <LinearLayout
+            android:id="@+id/rideCar_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/lyt_ride"
+                style="@style/RippleStyleBlack"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/class_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mbox_destination_search"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_text"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_regular"
+                                android:layout_height="0dp" />
+
+
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+
+                            <View
+                                android:layout_width="@dimen/spacing_medium"
+                                android:layout_height="0dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/price"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="$6.75"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/price_color"
+                                android:textStyle="bold"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12 min"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_text"
+                                android:textStyle="bold"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true">
+
+
+                <RelativeLayout
+                    android:id="@+id/relative_load"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/box" />
+
+
+                    <TextView
+                        android:id="@+id/mbox_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/image"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/neosans_pro_regular"
+                        android:text="@string/mbox_note_insurance"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="30dp"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/mbox_picklocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_round_green"
+                android:text="@string/mart_useLocation"
+                android:textColor="@color/material_light_white"
+                android:textSize="16sp"
+                android:fontFamily="@font/neosanspro_medium"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

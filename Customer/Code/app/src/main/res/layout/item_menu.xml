@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_leftButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@+id/item_quantity"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:src="@drawable/ic_left_button" />
+
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_rightButton"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/item_rightButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:src="@drawable/ic_right_button" />
+
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_leftButton"
+        android:hint="@string/mart_product"
+        android:singleLine="true" />
+
+</RelativeLayout>

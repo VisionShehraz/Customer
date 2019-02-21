@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "project_number": "286059351097",
+    "firebase_url": "https://go-taxi-dfa3e.firebaseio.com",
+    "project_id": "go-taxi-dfa3e",
+    "storage_bucket": "go-taxi-dfa3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286059351097:android:d3367dcf3edf1e41",
+        "android_client_info": {
+          "package_name": "com.gotaxiride.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286059351097-oecp7btjiuf2molcldhkq8u5uv4ukuo5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gotaxiride.driver",
+            "certificate_hash": "068db94c69c2891f756dd85c9527662dfa712bc2"
+          }
+        },
+        {
+          "client_id": "286059351097-fbm7deko1i54l5bqmeupbcg3f25d20uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gotaxiride.driver",
+            "certificate_hash": "f98510d558f58ad3b5d2e4ed36107060b8dd731b"
+          }
+        },
+        {
+          "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2dqe-G7F1IsLrKNgLHqP0jSkyL5dwlU"
+        },
+        {
+          "current_key": "AIzaSyCEjkikJ1fSGmrmVKIqg-lPMdAwl2p_lkA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286059351097:android:157e6085bf2e3b77",
+        "android_client_info": {
+          "package_name": "com.gotaxiride.passenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286059351097-gkd75vdl2q7is7qrend93t4a5pf6t5nk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gotaxiride.passenger",
+            "certificate_hash": "0c77961fa3f30d44a28742f9091605a5cd4b38a3"
+          }
+        },
+        {
+          "client_id": "286059351097-qcm8tsshnnudd45057b9qhle89u3j8t6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gotaxiride.passenger",
+            "certificate_hash": "f98510d558f58ad3b5d2e4ed36107060b8dd731b"
+          }
+        },
+        {
+          "client_id": "286059351097-qnli6rrurv69qr2peeh1nllvkjo8h7lf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gotaxiride.passenger",
+            "certificate_hash": "33cf536b550036ae0a2bfe2ecd38f14a44456a5c"
+          }
+        },
+        {
+          "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2dqe-G7F1IsLrKNgLHqP0jSkyL5dwlU"
+        },
+        {
+          "current_key": "AIzaSyCEjkikJ1fSGmrmVKIqg-lPMdAwl2p_lkA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

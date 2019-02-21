@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_light_white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="4dp"
+        card_view:cardElevation="4sp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:id="@+id/showLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp">
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="5sp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/image_product"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/no_photo"/>
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/makanan_text"
+                        android:layout_width="140dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+                        android:text="Ayam Lalapan rica rica pedis dan lain"
+                        android:layout_toRightOf="@+id/food_icon"
+                        android:textStyle="bold"
+                        android:textColor="@color/material_blue_grey_700"
+                        android:textSize="14sp"
+                      />
+
+                    <TextView
+                        android:id="@+id/deskripsi_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Gurih dan nikmat"
+                        android:layout_below="@+id/makanan_text"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/harga_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:text="$ 18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="125dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/makanan_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <EditText
+                    android:id="@+id/notes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_edit"
+                    android:hint="@string/food_notes"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quantity_text"
+                    android:padding="2dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@+id/add_quantity"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:background="@color/background_color"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/add_quantity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_round_green"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/remove_quantity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@+id/quantity_text"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_round_green"
+                    android:textSize="20sp"
+                />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginBottom="5dp"/> -->
+
+</LinearLayout>

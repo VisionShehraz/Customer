@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/nearme_item"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="7dp"
+        card_view:cardElevation="7sp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                app:cardCornerRadius="6dp"
+                card_view:cardElevation="6sp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/grey">
+
+                    <ImageView
+                        android:id="@+id/nearme_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/home_mMassage" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/nearme_resto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="left"
+                        android:text="@string/food_searchRestaurant"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/nearme_mitra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/food_partner"
+                        android:textColor="@color/material_green_600"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/nearme_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=" BUKA 12.00 - 21.00"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/nearme_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="2.1 KM | Jalan Soekarno Hatta No. 30, Malang"
+                        android:textColor="@color/grey"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/nearme_closed"
+                    android:layout_margin="5dp"
+                    android:textSize="10.0sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/food_closed"
+                    android:textColor="@color/material_red_900"
+                    android:background="@drawable/border_text_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

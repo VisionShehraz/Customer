@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/saldoDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/Available_Balance_amount"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/withdraw"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/nominalWithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittext_round_bg"
+        android:gravity="center"
+        android:hint="$ 100"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:textColorHint="@color/textGrey"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/butSubmitW"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/textColorGreen"
+            android:gravity="center"
+            android:text="@string/take_money"
+            android:textAllCaps="true"
+            android:textColor="@color/darkBrown"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
+
