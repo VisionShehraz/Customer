@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Customer.iml" filepath="$PROJECT_DIR$/Customer.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enetslib-release_1.2.1/enetslib-release_1.2.1.iml" filepath="$PROJECT_DIR$/enetslib-release_1.2.1/enetslib-release_1.2.1.iml" />
     </modules>
   </component>
 </project>

@@ -37,6 +37,7 @@ allprojects {
  * Be careful when update dependencies, different version library may caused error */
 dependencies {
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+    implementation project(':enetslib-release_1.2.1')
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
