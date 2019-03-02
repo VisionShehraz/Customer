@@ -23,6 +23,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.gotaxiride.passenger.config.General;
+import com.gotaxiride.passenger.managers.ENetsPaymentManager;
+import com.gotaxiride.passenger.signIn.SignInActivity;
 import com.gotaxiride.passenger.utils.AppBarLayoutBehavior;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
@@ -110,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements SnackbarControlle
         });
 
 
+        ENetsPaymentManager.makePayment("123123","123", this);
     }
 
 
