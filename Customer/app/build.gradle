@@ -3,10 +3,10 @@ apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.3'
+    buildToolsVersion '26'
     defaultConfig {
         applicationId 'com.gotaxiride.passenger'
-        minSdkVersion 17
+        minSdkVersion 18
         targetSdkVersion 26
         versionCode 13
         versionName '1.0.3'
