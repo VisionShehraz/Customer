@@ -28,13 +28,13 @@
         android:adjustViewBounds="true" />
 
     <ImageView
-        android:layout_width="284dp"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="65dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/logo500" />
+        android:src="@drawable/new_app_logo" />
 
 
 

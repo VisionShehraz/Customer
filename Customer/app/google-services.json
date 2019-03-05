@@ -1,46 +1,35 @@
 {
   "project_info": {
-    "project_number": "286059351097",
-    "firebase_url": "https://go-taxi-dfa3e.firebaseio.com",
-    "project_id": "go-taxi-dfa3e",
-    "storage_bucket": "go-taxi-dfa3e.appspot.com"
+    "project_number": "568626153305",
+    "firebase_url": "https://customerapp-f58a1.firebaseio.com",
+    "project_id": "customerapp-f58a1",
+    "storage_bucket": "customerapp-f58a1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:286059351097:android:d3367dcf3edf1e41",
+        "mobilesdk_app_id": "1:568626153305:android:ab3536bc31b4609f",
         "android_client_info": {
-          "package_name": "com.gotaxiride.driver"
+          "package_name": "com.letsride.passenger"
         }
       },
       "oauth_client": [
         {
-          "client_id": "286059351097-oecp7btjiuf2molcldhkq8u5uv4ukuo5.apps.googleusercontent.com",
+          "client_id": "568626153305-gm3f5hp6vsqs1lei9h5va9g1qm72c9ud.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.gotaxiride.driver",
-            "certificate_hash": "068db94c69c2891f756dd85c9527662dfa712bc2"
+            "package_name": "com.letsride.passenger",
+            "certificate_hash": "d0bc58d2a0ce72955da83fef017a073cc145777d"
           }
         },
         {
-          "client_id": "286059351097-fbm7deko1i54l5bqmeupbcg3f25d20uu.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.gotaxiride.driver",
-            "certificate_hash": "f98510d558f58ad3b5d2e4ed36107060b8dd731b"
-          }
-        },
-        {
-          "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
+          "client_id": "568626153305-qpa8hpg0q2omu2nvivigld8t8tga6c5n.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZ2dqe-G7F1IsLrKNgLHqP0jSkyL5dwlU"
-        },
-        {
-          "current_key": "AIzaSyCEjkikJ1fSGmrmVKIqg-lPMdAwl2p_lkA"
+          "current_key": "AIzaSyDFQI020J3sRA1DUd-UBlgcfksqBe6YaB4"
         }
       ],
       "services": {
@@ -51,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
+              "client_id": "568626153305-qpa8hpg0q2omu2nvivigld8t8tga6c5n.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -63,47 +52,20 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:286059351097:android:157e6085bf2e3b77",
+        "mobilesdk_app_id": "1:568626153305:android:d642a958d332c3e1",
         "android_client_info": {
-          "package_name": "com.gotaxiride.passenger"
+          "package_name": "com.letsride.taxicustomer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "286059351097-gkd75vdl2q7is7qrend93t4a5pf6t5nk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.gotaxiride.passenger",
-            "certificate_hash": "0c77961fa3f30d44a28742f9091605a5cd4b38a3"
-          }
-        },
-        {
-          "client_id": "286059351097-qcm8tsshnnudd45057b9qhle89u3j8t6.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.gotaxiride.passenger",
-            "certificate_hash": "f98510d558f58ad3b5d2e4ed36107060b8dd731b"
-          }
-        },
-        {
-          "client_id": "286059351097-qnli6rrurv69qr2peeh1nllvkjo8h7lf.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.gotaxiride.passenger",
-            "certificate_hash": "33cf536b550036ae0a2bfe2ecd38f14a44456a5c"
-          }
-        },
-        {
-          "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
+          "client_id": "568626153305-qpa8hpg0q2omu2nvivigld8t8tga6c5n.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZ2dqe-G7F1IsLrKNgLHqP0jSkyL5dwlU"
-        },
-        {
-          "current_key": "AIzaSyCEjkikJ1fSGmrmVKIqg-lPMdAwl2p_lkA"
+          "current_key": "AIzaSyDFQI020J3sRA1DUd-UBlgcfksqBe6YaB4"
         }
       ],
       "services": {
@@ -111,13 +73,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "286059351097-7dluq95oif6el1bu1uffeovsksjootih.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

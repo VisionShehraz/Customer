@@ -20,7 +20,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@android:color/white"
+                android:background="@color/blackTransparent"
                 app:contentInsetStartWithNavigation="0dp"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:theme="@style/Toolbar.Light" />
@@ -33,17 +33,17 @@
                 android:layout_alignParentStart="true"
                 android:layout_gravity="left|center_horizontal"
                 android:paddingTop="@dimen/spacing_regular"
-                android:src="@drawable/logo" />
+                android:src="@drawable/new_app_logo" />
 
             <ImageView
                 android:id="@+id/languange"
                 android:layout_width="26dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_gravity="right"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:adjustViewBounds="true"
-                android:layout_marginTop="10dp"
-                android:layout_alignParentRight="true"
                 android:tint="@color/purplefresh"
                 app:srcCompat="@drawable/ic_language_black_24dp" />
         </RelativeLayout>
@@ -56,11 +56,12 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <com.gotaxiride.passenger.utils.view.CustomViewPager
+        <com.letsride.passenger.utils.view.CustomViewPager
             android:id="@+id/main_viewPager"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginBottom="56dp"/>
+            android:layout_marginBottom="56dp"
+            android:background="@color/blackTransparent" />
 
         <View
             android:layout_width="match_parent"
@@ -73,22 +74,22 @@
             android:layout_height="4dp"
             android:layout_gravity="bottom"
             android:layout_marginBottom="56dp"
-            android:background="@color/background_color" />
+            android:background="@color/blackTransparent" />
 
         <com.ogaclejapan.smarttablayout.SmartTabLayout
-            android:layout_gravity="bottom"
             android:id="@+id/main_tabLayout"
-            android:background="@color/white"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/tabLayoutHeightTextImage"
-            app:stl_indicatorInterpolation="linear"
-            app:stl_indicatorColor="@color/transparent"
-            app:stl_indicatorThickness="0.0dip"
-            app:stl_underlineColor="@color/transparent"
-            app:stl_dividerColor="@color/transparent"
+            android:layout_gravity="bottom"
+            android:background="@color/blackTransparent"
+            app:stl_clickable="true"
             app:stl_defaultTabTextColor="@color/grey"
             app:stl_distributeEvenly="true"
-            app:stl_clickable="true" />
+            app:stl_dividerColor="@color/transparent"
+            app:stl_indicatorColor="@color/transparent"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="0.0dip"
+            app:stl_underlineColor="@color/transparent" />
 
     </FrameLayout>
 

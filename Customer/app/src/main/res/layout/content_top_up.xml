@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.gotaxiride.passenger.home.submenu.TopUpActivity"
+    tools:context="com.letsride.passenger.home.submenu.TopUpActivity"
     tools:showIn="@layout/activity_top_up">
 
 </RelativeLayout>

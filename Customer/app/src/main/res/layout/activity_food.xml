@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_color"
     android:orientation="vertical"
-    tools:context="com.gotaxiride.passenger.mFood.FoodActivity">
+    tools:context="com.letsride.passenger.mFood.FoodActivity">
 
 
     <android.support.design.widget.AppBarLayout

@@ -23,7 +23,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/spacing_mlarge"
             android:layout_marginTop="@dimen/spacing_large"
-            android:src="@drawable/logo500"
+            android:src="@drawable/new_app_logo"
              />
 
         <android.support.v7.widget.CardView

@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/blackTransparent"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -21,19 +22,18 @@
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/world_map"
-                android:tint="@color/white"
-                />
+                android:tint="@color/white" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="188dp"
-                android:background="@color/material_light_white">
+                android:background="@color/blackTransparent">
 
                 <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
                     android:id="@+id/slide_viewPager"
-                    android:layout_width="match_parent"
-                    android:layout_height="158dp"
-                    android:background="@drawable/go_cab"/>
+                    android:layout_width="397dp"
+                    android:layout_height="119dp"
+                    android:background="@drawable/new_app_logo" />
 
                 <me.relex.circleindicator.CircleIndicator
                     android:id="@+id/slide_viewPager_indicator"
@@ -42,7 +42,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
                     app:ci_drawable="@drawable/selecteditem_dot"
-                    app:ci_drawable_unselected="@drawable/nonselecteditem_dot"/>
+                    app:ci_drawable_unselected="@drawable/nonselecteditem_dot" />
             </RelativeLayout>
 
 
@@ -50,9 +50,9 @@
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:text=""
                 android:textColor="@color/white"
-                android:layout_marginStart="15dp"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -69,19 +69,31 @@
 
         </RelativeLayout>
 
+
+        <TextView
+            android:id="@+id/browser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/neosanspro_medium"
+            android:text="Browse Lets Ride"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
         <android.support.v7.widget.CardView
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginBottom="@dimen/spacing_medium"
             android:layout_marginLeft="@dimen/spacing_middle"
-            android:layout_marginRight="@dimen/spacing_middle"
             android:layout_marginTop="-30dp"
+            android:layout_marginRight="@dimen/spacing_middle"
+            android:layout_marginBottom="@dimen/spacing_medium"
             android:clipToPadding="false"
             app:cardBackgroundColor="@android:color/white"
             app:cardCornerRadius="6dp"
-            card_view:cardElevation="6sp"
-            app:cardElevation="2dp">
+            app:cardElevation="2dp"
+            card_view:cardElevation="6sp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -94,6 +106,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0.0dip"
+                    android:background="@color/blackTransparent"
                     android:orientation="horizontal">
 
                     <TextView
@@ -102,45 +115,46 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
+                        android:fontFamily="@font/neosans_pro_regular"
                         android:text=""
                         android:textColor="@color/black"
                         android:textSize="14sp"
-                        android:fontFamily="@font/neosans_pro_regular"
                         android:textStyle="bold" />
 
                     <ProgressBar
                         android:id="@+id/loading"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="5dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true" />
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp" />
 
                     <Button
-                        android:textColor="@color/black"
                         android:id="@+id/home_topUpButton"
+                        style="@style/Widget.AppCompat.Button.Borderless"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
-                        style="@style/Widget.AppCompat.Button.Borderless" />
+                        android:textColor="@color/black" />
 
 
-                    <ImageView android:id="@+id/imageView4"
+                    <ImageView
+                        android:id="@+id/imageView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8.0dip"
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="8.0dip"
                         app:srcCompat="@drawable/gopay" />
 
                     <ImageView
                         android:id="@+id/imageView8"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="12.0dip"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
+                        android:layout_marginEnd="12.0dip"
                         android:tint="@color/purplefresh"
                         app:srcCompat="@drawable/ic_add_green" />
 
@@ -149,26 +163,15 @@
 
         </android.support.v7.widget.CardView>
 
-
-        <TextView
-            android:id="@+id/browser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Browse the GoTaxi"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/neosanspro_medium"/>
         <TextView
             android:id="@+id/chcek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="3dp"
             android:text="Check all 8 of our services."
             android:textColor="@color/colorGreyDark"
-            android:textSize="12sp"
-            android:layout_marginStart="10dp" />
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -178,34 +181,34 @@
                 android:id="@+id/recyclerView_main_home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="25dp"
-                android:background="@color/background_color"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:background="@color/blackTransparent" />
 
         </LinearLayout>
 
 
-        <View android:layout_width="match_parent"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
-            android:layout_height="0.5dp" />
-
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
 
 
         <TextView
             android:id="@+id/text_nearme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="13dp"
+            android:fontFamily="@font/neosanspro_medium"
             android:text="Nearest Restaurant"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/neosanspro_medium"/>
+            android:textSize="18sp" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/nearme_recycler"
@@ -213,27 +216,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:background="@color/background_color">
+            android:background="@color/blackTransparent">
 
         </android.support.v7.widget.RecyclerView>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.1dip"
-            android:background="@color/grey"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/grey" />
 
-        <include
-            layout="@layout/zpromo_taxi" />
-        <include
-            layout="@layout/zpromo_food" />
-
-
+        <include layout="@layout/zpromo_taxi" />
+        <include layout="@layout/zpromo_food" />
 
     </LinearLayout>
-
-
 </ScrollView>

@@ -31,7 +31,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <com.gotaxiride.passenger.utils.view.RoundedImageView
+                <com.letsride.passenger.utils.view.RoundedImageView
                     android:id="@+id/imageView_main_adapter"
                     android:layout_width="45dp"
                     android:layout_height="45dp"

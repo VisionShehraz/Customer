@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.gotaxiride.passenger.home.submenu.history.CompletedHistoryFragment">
+    tools:context="com.letsride.passenger.home.submenu.history.CompletedHistoryFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/completed_recyclerView"

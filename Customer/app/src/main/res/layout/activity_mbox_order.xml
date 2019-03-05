@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/material_light_white"
     android:orientation="vertical"
-    tools:context="com.gotaxiride.passenger.mBox.BoxOrder">
+    tools:context="com.letsride.passenger.mBox.BoxOrder">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-    <com.gotaxiride.passenger.utils.view.CustomScrollView
+    <com.letsride.passenger.utils.view.CustomScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -696,7 +696,7 @@
 
         </LinearLayout>
 
-    </com.gotaxiride.passenger.utils.view.CustomScrollView>
+    </com.letsride.passenger.utils.view.CustomScrollView>
 
 
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/material_light_white"
-    tools:context="com.gotaxiride.passenger.mFood.BookingActivity">
+    tools:context="com.letsride.passenger.mFood.BookingActivity">
 
     <FrameLayout
         android:id="@+id/toolbar"
@@ -398,8 +398,6 @@
                 </RelativeLayout>
 
             </RelativeLayout>
-
-
         </LinearLayout>
 
     </ScrollView>

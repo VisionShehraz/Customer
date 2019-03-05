@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/material_light_white"
     android:orientation="vertical"
-    tools:context="com.gotaxiride.passenger.mService.mServiceProgress">
+    tools:context="com.letsride.passenger.mService.mServiceProgress">
 
     <FrameLayout
         android:layout_width="match_parent"

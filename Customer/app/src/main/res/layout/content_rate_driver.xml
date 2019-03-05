@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.gotaxiride.passenger.mRideCar.RateDriverActivity"
+    tools:context="com.letsride.passenger.mRideCar.RateDriverActivity"
     tools:showIn="@layout/activity_rate_driver">
 
 </RelativeLayout>

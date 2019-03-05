@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GO-TAXI</string>
+    <string name="app_name">LETS RIDE</string>
 
     <string name="main_menuHome">Home</string>
     <string name="main_menuHistory">Orders</string>
@@ -8,30 +8,30 @@
     <string name="main_pickLocation">Select Location</string>
     <string name="app_name_services">GoTaxi Services</string>
 
-    <string name="home_mRide">Go-Moto</string>
-    <string name="home_mCar">Go-Cab</string>
-    <string name="home_mFood">Go-Food</string>
-    <string name="home_mMart">Go-Mart</string>
-    <string name="home_mSend">Go-Send</string>
-    <string name="home_mMassage">Go-Massage</string>
-    <string name="home_mBox">Go-Box</string>
-    <string name="home_mService">Go-Service</string>
+    <string name="home_mRide">Lets Ride</string>
+    <string name="home_mCar">Lets Cab</string>
+    <string name="home_mFood">Lets Food</string>
+    <string name="home_mMart">Lets Mart</string>
+    <string name="home_mSend">Lets Send</string>
+    <string name="home_mMassage">Lets Massage</string>
+    <string name="home_mBox">Lets Box</string>
+    <string name="home_mService">Lets Service</string>
 
 
-    <string name="home_mAuto">Go-Auto</string>
-    <string name="home_mClean">Go-Clean</string>
-    <string name="home_mTutor">Go-Tutor</string>
-    <string name="home_mPlumber">Go-Plumber</string>
+    <string name="home_mAuto">Lets Auto</string>
+    <string name="home_mClean">Lets Clean</string>
+    <string name="home_mTutor">Lets Tutor</string>
+    <string name="home_mPlumber">Lets Plumber</string>
     <string name="home_mSchool">Travel</string>
     <string name="home_mTour">Tour</string>
-    <string name="home_mGlam">Go-Glam</string>
-    <string name="home_mTicket">Go-Ticket</string>
-    <string name="home_mSpesial">Go-Action</string>
+    <string name="home_mGlam">Lets Glam</string>
+    <string name="home_mTicket">Lets Ticket</string>
+    <string name="home_mSpesial">Lets Action</string>
     <string name="more">More</string>
-    <string name="home_mBus">Go-Bus</string>
-    <string name="home_mLaundry">Go-Laundry</string>
-    <string name="home_mSecurity">Go-Security</string>
-    <string name="home_mFuel">Go-Fuel</string>
+    <string name="home_mBus">Lets Bus</string>
+    <string name="home_mLaundry">Lets Laundry</string>
+    <string name="home_mSecurity">Lets Security</string>
+    <string name="home_mFuel">Lets Fuel</string>
 
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
@@ -261,7 +261,7 @@
     </string-array>
 
     <string name="title_activity_history_detail">History Details</string>
-    <string name="title_activity_send">Go-SEND</string>
+    <string name="title_activity_send">Lets SEND</string>
     <string name="title_activity_add_detail_send">Add Details</string>
 
     <string name="food_search">Hungry? Find a meal well!</string>
@@ -305,7 +305,7 @@
     <string name="rate_message">Thank you for using our services.</string>
     <string name="change">Change</string>
     <string name="incorrect">Incorrect username or password</string>
-    <string name="mbox_destination_search">Set GO-BOX Destination</string>
+    <string name="mbox_destination_search">Set Lets BOX Destination</string>
 
     <string name="call_sos">Call SOS</string>
     <string name="call_sos_now">Do you want to call 999</string>
@@ -313,6 +313,10 @@
     <string name="message_rate_driver">Give Your Rating To Our Driver</string>
     <string name="thank_you">Thank You</string>
     <string name="add_a_comment">Add a comment..</string>
+
+    <string name="paymentButtonTitle">Next</string>
+    <string name="hint_Umid">UM ID</string>
+    <string name="hint_Amount">Amount</string>
 
 
     <!-- <string name="food_partner_active">Active</string>
@@ -353,7 +357,7 @@
     <string name="with_wallet">with Wallet</string>
     <string name="process">PROCESS</string>
     <string name="complete">COMPLETE</string>
-    <string name="des">Please enter your mobile number for the verification process with the GO-TAXI System</string>
+    <string name="des">Please enter your mobile number for the verification process with the Lets TAXI System</string>
     <string name="get_code">Get Code</string>
     <string name="verification">Verification</string>
     <string name="enter_code">Enter 6 number codes</string>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.gotaxiride.passenger.mService.mServiceWaiting">
+    tools:context="com.letsride.passenger.mService.mServiceWaiting">
 
     <FrameLayout
         android:layout_width="match_parent"

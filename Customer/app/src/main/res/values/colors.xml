@@ -15,7 +15,7 @@
     <color name="background_color">#f2f2f2</color>
     <color name="text_color">#0f0f0f</color>
     <color name="divider">#f2f2f2</color>
-    <color name="purplefresh">#580672</color>
+    <color name="purplefresh">#D5CCD7</color>
     <color name="background">#dddddd</color>
 
 
@@ -40,7 +40,7 @@
     <color name="blue">#044271</color>
     <color name="lightGrey">#f4f4f4</color>
 
-    <color name="blackTransparent">#a0000000</color>
+    <color name="blackTransparent">#A0000000</color>
     <color name="GanRide">#e99e23</color>
     <color name="GanCar">#0bac79</color>
     <color name="GanSend">#0bac79</color>

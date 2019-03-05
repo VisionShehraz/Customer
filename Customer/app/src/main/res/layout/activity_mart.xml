@@ -90,7 +90,7 @@
 
 
 
-    <com.gotaxiride.passenger.utils.view.CustomScrollView
+    <com.letsride.passenger.utils.view.CustomScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -418,5 +418,5 @@
                     android:fontFamily="@font/neosanspro_medium"/>
             </LinearLayout>
         </LinearLayout>
-    </com.gotaxiride.passenger.utils.view.CustomScrollView>
+    </com.letsride.passenger.utils.view.CustomScrollView>
 </LinearLayout>
